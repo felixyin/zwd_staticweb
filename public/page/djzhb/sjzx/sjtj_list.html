@@ -1,0 +1,86 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<title>大数据统计</title>
+
+<style type="text/css">
+*{margin:0;padding:0;list-style-type:none;}/*清楚内外默认边距*/
+/*body{background:#cb5412;}*/
+.header{height: 95px;width: 100%;background: url('/assets/img/djzhb/sjzx/sjtj/course_bg.jpg');background-repeat: repeat-x;}
+.web{width:100%;height:auto;margin:0px auto;}
+.con{width:950px;height:435px;background:#fff;margin:27px auto;padding-left:25px;padding-top:25px;}
+.con ul li{width:297px;height:198px;float:left;margin-right:15px;margin-bottom:15px;position:relative;overflow:hidden;cursor:pointer;}
+.txt{width:297px;height:45px;background:rgba(0,0,0,0.6);/*透明背景色，不透明其文字内容*/position:absolute;left:0;bottom:0;color:#fff;font-family:"微软雅黑";}
+.txt h3{font-size:20px;font-weight:100;height:45px;text-align:center;line-height:45px;}
+.txt p{font-size:14px;text-align:center;}
+</style>
+
+</head>
+<body>
+
+<div class="web">
+	<div class="con">
+		<ul>
+			<li>
+				<img src="images/tj1.jpg"/>
+				<div class="txt">
+					<h3>数据统计</h3>
+					<p>数据统计说明</p>
+				</div>
+			</li>
+			<li>
+				<img src="images/tj2.jpg"/>
+				<div class="txt">
+					<h3>数据统计</h3>
+					<p>数据统计说明</p>
+				</div>
+			</li>
+			<li>
+				<img src="images/tj3.jpg"/>
+				<div class="txt">
+					<h3>数据统计</h3>
+					<p>数据统计说明</p>
+				</div>
+			</li>
+			<li>
+				<img src="images/tj4.jpg"/>
+				<div class="txt">
+					<h3>数据统计</h3>
+					<p>数据统计说明</p>
+				</div>
+			</li>
+			<li>
+				<img src="images/tj5.jpg"/>
+				<div class="txt">
+					<h3>数据统计</h3>
+					<p>数据统计说明</p>
+				</div>
+			</li>
+			<li>
+				<img src="images/tj6.jpg"/>
+				<div class="txt">
+					<h3>数据统计</h3>
+					<p>数据统计说明</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<script type="text/javascript" src="/assets/lib/jquery/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+$(".con ul li").hover(function(){
+	$(this).find(".txt").stop().animate({height:"198px"},400);
+	$(this).find(".txt h3").stop().animate({paddingTop:"60px"},400);
+},function(){
+	$(this).find(".txt").stop().animate({height:"45px"},400);
+	$(this).find(".txt h3").stop().animate({paddingTop:"0px"},400);
+})
+</script>
+
+</body>
+</html>

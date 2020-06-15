@@ -1,0 +1,20 @@
+{
+  "isAlert": false,
+  "resultData": {
+    "total": 42360,
+    "data": [
+      {
+        "url": "http://127.0.0.1:8000/page/DevelopPeople/Develop_Index.html",
+        "name": "人大代表",
+        "icon": "/assets/img/party_government/xxgl_icon.png",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://127.0.0.1:8000/page/DevelopPeople/Develop_Index.html",
+        "name": "学习宣传",
+        "icon": "/assets/img/party_government/xxgl_icon.png",
+        "target": "main_frame"
+      }
+    ]
+  }
+}

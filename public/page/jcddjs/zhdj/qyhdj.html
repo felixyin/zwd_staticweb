@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>区域化党建</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/assets/lib/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="/assets/lib/viewer/viewer.min.css"/>
+    <link rel="stylesheet" href="/assets/css/common/style.css" media="all">
+    <link rel="stylesheet" href="/assets/css/jcddjs/zhdj/qyhdj/list.css" media="all">
+    
+    <style type="text/css">
+        .layui-btn-normal {
+            background-color: rgb(240,40,60)!important;
+        }
+        .layui-layer-btn0{
+            background-color: rgb(240,40,60)!important;
+            border-color: rgb(240,40,60)!important;
+        }
+        .layui-layer-title{
+            background-color: #f88e85!important;
+        }
+        .layui-laypage .layui-laypage-curr .layui-laypage-em{
+            background-color: lightpink!important;
+        }
+    </style>
+    
+</head>
+<body>
+<div class="layui-fluid" style="padding-top:10px;">
+	<span class="layui-breadcrumb">
+	  <a><cite>首页</cite></a>
+	  <a><cite>区域化党建</cite></a>
+	</span>
+    <!-- 右上角按钮 -->
+        <div style="float:right;">
+            <button class="layui-btn layui-btn-sm layui-btn-normal"  onclick="addDataFunc()">
+                <i class="layui-icon">&#xe654;</i>
+                添加
+            </button>
+        </div>
+
+    <div class="layui-clear"></div>
+
+    <blockquote class="layui-elem-quote layui-quote-nm " style="margin-top:1px;">
+        <form class="layui-form BTNSHOW BTNSHOW_QUERY" action="javascript:;" id="query_condition">
+            <div class="layui-form-item" style="margin-bottom:0;">
+                <div class="layui-inline" style="width:100%">
+                    <div class="searchbut">
+                        <!-- <div class="butsure">
+                                <label class="layui-form-label">查询条件：</label>
+                             </div> -->
+                        <div id="condition_class" class="layui-inline">
+                            
+                            <div class="layui-input-inline">
+                                <input type="text" name="c1" id="c1-id" defaultmsg="填报单位"
+                                       placeholder="填报单位" lay-filter='c1' class="layui-input"
+                                       condition=""/>
+                            </div>
+                            
+                            <div class="layui-input-inline">
+                                <input type="text" name="c2" id="c2-id" defaultmsg="时间"
+                                       placeholder="时间" lay-filter='c2' class="layui-input"
+                                       condition=""/>
+                            </div>
+                            
+                            <div class="layui-input-inline">
+                                <input type="text" name="c3" id="c3-id" defaultmsg="县（市、区）市级功能区"
+                                       placeholder="县（市、区）市级功能区" lay-filter='c3' class="layui-input"
+                                       condition=""/>
+                            </div>
+                            
+                            <div class="layui-input-inline">
+                                <input type="text" name="c4" id="c4-id" defaultmsg="城市社区数"
+                                       placeholder="城市社区数" lay-filter='c4' class="layui-input"
+                                       condition=""/>
+                            </div>
+                            
+                            <div class="layui-input-inline">
+                                <input type="text" name="c5" id="c5-id" defaultmsg="工业园区数"
+                                       placeholder="工业园区数" lay-filter='c5' class="layui-input"
+                                       condition=""/>
+                            </div>
+                            
+                            <div class="layui-input-inline">
+                                <input type="text" name="c6" id="c6-id" defaultmsg="乡镇数"
+                                       placeholder="乡镇数" lay-filter='c6' class="layui-input"
+                                       condition=""/>
+                            </div>
+                            
+                            <div class="layui-input-inline">
+                                <input type="text" name="c7" id="c7-id" defaultmsg="建立区域性党组织总数"
+                                       placeholder="建立区域性党组织总数" lay-filter='c7' class="layui-input"
+                                       condition=""/>
+                            </div>
+                            
+                            <div class="layui-input-inline" id="searchbutton">
+                                <button class="layui-btn layui-btn-normal" lay-submit lay-filter="queryData">
+                                    <i class="layui-icon ">&#xe615</i>
+                                </button>
+                                <button class="layui-btn layui-btn-normal" id="Reload">
+                                    <i title="刷新" class="layui-icon ">&#xe669</i>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </blockquote>
+
+    <!--主题表格数据开始-->
+    <table id="tabledata" lay-filter="test"></table>
+
+    <div class="layui-tab-item">
+        <div id="pageDemo"></div>
+    </div>
+</div>
+
+<!--编辑表格弹出层开始-->
+<form id="form_edit" class="layui-form" style=" display:none;margin-top:30px;" action="">
+    <input type="hidden" id="id" name="id" autocomplete="off" class="layui-input">
+    
+    <div class="layui-form-item">
+        
+            <label class="layui-form-label">填报单位</label>
+            <div class="layui-input-inline">
+                <input type="text" name="c1" id="c1_edit"
+                       class="layui-input"  placeholder="填报单位"/>
+            </div>
+        
+        
+            <label class="layui-form-label">
+<!--                <span style="color:red;">*</span>-->
+                时间</label>
+            <div class="layui-input-inline">
+                <input type="text" name="c2" id="c2_edit"
+                       class="layui-input"  placeholder="时间"/>
+            </div>
+        
+    </div>
+    
+    <div class="layui-form-item">
+        
+            <label class="layui-form-label">县（市、区）市级功能区</label>
+            <div class="layui-input-inline">
+                <input type="text" name="c3" id="c3_edit"
+                       class="layui-input"  placeholder="县（市、区）市级功能区"/>
+            </div>
+        
+        
+            <label class="layui-form-label">
+<!--                <span style="color:red;">*</span>-->
+                城市社区数</label>
+            <div class="layui-input-inline">
+                <input type="text" name="c4" id="c4_edit"
+                       class="layui-input"  placeholder="城市社区数"/>
+            </div>
+        
+    </div>
+    
+    <div class="layui-form-item">
+        
+            <label class="layui-form-label">工业园区数</label>
+            <div class="layui-input-inline">
+                <input type="text" name="c5" id="c5_edit"
+                       class="layui-input"  placeholder="工业园区数"/>
+            </div>
+        
+        
+            <label class="layui-form-label">
+<!--                <span style="color:red;">*</span>-->
+                乡镇数</label>
+            <div class="layui-input-inline">
+                <input type="text" name="c6" id="c6_edit"
+                       class="layui-input"  placeholder="乡镇数"/>
+            </div>
+        
+    </div>
+    
+    <div class="layui-form-item">
+        
+            <label class="layui-form-label">建立区域性党组织总数</label>
+            <div class="layui-input-inline">
+                <input type="text" name="c7" id="c7_edit"
+                       class="layui-input"  placeholder="建立区域性党组织总数"/>
+            </div>
+        
+        
+    </div>
+    
+
+    <div class="layui-form-item" id="bntgroup">
+        <div class="from_but">
+            <button class="layui-btn layui-btn-normal" id="queryCondBtn" lay-submit lay-filter="editInfo">提交</button>
+        </div>
+    </div>
+</form>
+
+
+<script src="/assets/lib/jquery/jquery-3.2.1.min.js"></script>
+<script src="/assets/js/app.js"></script>
+<script src="/assets/js/common/range.js"></script>
+<script src="/assets/lib/viewer/viewer.min.js"></script>
+<script src="/assets/js/common/validate.js"></script>
+<script src="/assets/lib/layui/layui.all.js"></script>
+<script src="/assets/js/jcddjs/zhdj/qyhdj/list.js"></script>
+</body>
+</html>

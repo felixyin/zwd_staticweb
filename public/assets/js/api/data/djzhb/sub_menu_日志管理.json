@@ -1,0 +1,26 @@
+{
+  "isAlert": false,
+  "resultData": {
+    "total": 42360,
+    "data": [
+      {
+        "url": "http://39.104.21.7:20312/res/page/logManager/log_list.html",
+        "name": "操作日志",
+        "icon": "/assets/img/party_government/xxgl_icon.png",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://39.104.21.7:20312/res/page/logManager/log_list.html",
+        "name": "系统日志",
+        "icon": "/assets/img/party_government/xxgl_icon.png",
+        "target": "main_frame"
+      },
+	  {
+        "url": "http://39.104.21.7:20312/res/page/logManager/log_list.html",
+        "name": "更新日志",
+        "icon": "/assets/img/party_government/xxgl_icon.png",
+        "target": "main_frame"
+      }
+    ]
+  }
+}

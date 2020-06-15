@@ -1,0 +1,265 @@
+#queries{
+	width:100%;
+	height: 185px;
+	line-height: 185px;
+}
+#queries hr{
+	width: 180px;
+    display: inline-block;
+}
+.queriesbox{
+	/*width:830px;*/
+	font-size:38px ;
+}
+.queriesbox, .querieslist, .querieslist li{
+	display: inline-block;
+}
+.querieslist{
+    padding: 0px 20px;
+	margin: 0px auto;
+}
+.querieslist li{
+	text-align: center;
+	width: 38px;
+	height: 60px;
+	line-height: 60px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+	-ms-box-sizing:border-box;
+	border:2px solid #999999 ;
+}
+.Finance{
+	width:100% ;
+	height: 285px;
+}
+#Finance_left, #Finance_right{
+	display: inline-block;
+	width:578px;
+	height:234px;
+	background: url(../img/Finance.png) no-repeat ;
+	background-size:100% 100% ;
+}
+.Finance_name{
+	font-size: 31px;
+	height:120px;
+	line-height: 120px;
+	text-align: center;
+}
+/*#Finance_left ul li, #Finance_right ul li{
+	width:100%;
+}*/
+.Finance_box, .Finance_box li{
+	display: inline-block;
+	height: 68px;
+}
+.Yline{
+	width: 2px;
+	background: #999;
+	height:100%;
+}
+.li_first, .li_Fourth{
+	width:45px
+}
+.li_first img, .li_Fourth img{
+	margin-top: 15px;
+    display: block;
+}
+.li_Fifth{
+	width: 220px;
+}
+.li_Second{
+	width: 200px;
+}
+.ptext{
+	margin-left:15px
+}
+.map{
+	background: #f1f2f3;
+	padding: 20px;
+}
+.search{
+  width: 100%;
+  height: 260px;
+  background: #fff;
+}
+.search_money{
+	width:442px;
+	height:68px;
+	border: 1px solid #999;
+	margin-top:42px;
+	line-height: 68px;
+	
+    text-align: center;
+	display: inline-block;
+}
+.search_money:hover{
+	border: 1px solid #fff;
+	background: #c40311;
+	color: #fff;
+	cursor: pointer;
+}
+.search_left{
+	float: left;
+	margin-left: 65px;
+}
+.search_right{
+	float: right;
+	margin-right: 65px;
+}
+.clickall li{
+	display: inline-block;
+}
+.click_header{
+	width: 193px;
+	height: 78px;
+	margin-left:92px;
+}
+.click_footer{
+	width: 150px;
+	height: 78px;
+	margin-left: -10px;
+}
+.click_header img, .click_footer img{
+	/*vertical-align:  top;*/
+	vertical-align:  bottom; 
+	 display: block; 
+	 margin-top: 34px;
+	 height: 78px;
+}
+.click_input{
+	width:432px;
+	height:74px;
+}
+.click_input input{
+	width: 433px;
+    height: 100%;
+    border: 1px solid #c40311;
+    margin-left: -4px;
+    border-left: 0px;
+    padding-left: 20px;
+}
+.backclick{
+	border-radius: 10px;
+	width: 190px;
+	height:75px;
+	line-height: 75px;
+	text-align: center;
+	border:1px solid #999999;
+	background: #f1f2f3;
+	margin-right: 92px;
+    /* position: absolute; */
+    float: right;
+    margin-top: 36px;
+}
+.mapbackground{
+	background: #fff;
+	width: 100%;
+	height: 636px;
+	padding-top:30px;
+	margin-top:40px;	
+}
+.mapimg{
+	/*background: url(../img/map.png) no-repeat;*/	
+	background-position: 160px 0px;
+	width: 100%;
+    height: 100%;
+}
+.backbox{
+	width:670px;
+	height: 42px;
+	margin-left:38px;
+	border-left: 8px solid #c40311;
+	border-bottom: 1px solid #c40311;
+}
+.backbox p{
+	display: inline-block;
+}
+.cleardiv{
+	width: 1200px;
+	height:40px;
+	background: #fff;
+	margin-top:20px;
+}
+#lookmore{
+    position: absolute;
+    right: 0px;
+    margin-top: -5px;
+}
+.moretext{
+	width: 210px;
+   /* background: #f1f2f3;*/
+    float: right;
+    text-align: right;
+    height: 45px;
+    padding-top: 15px;
+}
+.moretext span:hover{
+	cursor: pointer;
+	color: #101010;
+}
+.project{
+	position: relative;
+}
+.projectname{
+	text-align: center;
+	margin: 40px 0px;
+}
+#projectlist {
+	width:100%;
+	margin-left:0px;
+}
+
+#projectlist li{
+	display: none;
+	cursor: pointer;
+	padding-top:10px;
+	display: inline-block;
+	height: 45px;
+	text-align: center;
+	width: 19%;
+}
+.project_main{
+	margin-top: 20px;
+	text-align: center;
+}
+.project_MainElem{
+	margin:20px 0px 0px 0px;
+	width:340px;
+	height: 45px;
+	text-align: center;
+	line-height: 45px;
+	 border: 1px solid #999;
+	 display: inline-block;
+}
+.submain_left{
+	float:left;
+}
+.submain_right{
+	float:right;
+}
+.project_MainElem:hover{
+	border: 1px solid #fff;
+	background: #c40311;
+	color: #fff;
+	cursor: pointer;
+}
+
+#tablemain{
+	width: 100%;
+	border-right:1px solid #999;
+	border-bottom:1px solid #999;
+	vertical-align: middle;
+	margin-bottom: 50px;
+	} 
+#tablemain tr{
+	height: 40px;
+	line-height: 40px;
+	
+}	
+#tablemain td, #tablemain td{
+	text-align: center;
+	border-left:1px solid #999;
+	border-top:1px solid #999;
+}
+	

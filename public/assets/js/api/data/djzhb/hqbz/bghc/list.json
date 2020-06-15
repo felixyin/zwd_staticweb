@@ -1,0 +1,32 @@
+{
+  "isAlert": false,
+  "status": 200,
+  "resultData": {
+    "total": 2,
+    "totalPage": 10,
+    "hint": "",
+    "limit": 1,
+    "page": 1,
+    "status": 200,
+    "data": [
+      {
+        "id": "0",
+        "categ": "办公",
+        "name": "桌子",
+        "supl": "上华办公",
+        "kucun": "600",
+        "dtime": "2015年6月2日",
+        "desc": ""
+      },
+      {
+        "id": "1",
+        "categ": "办公",
+        "name": "椅子",
+        "supl": "自知办公用品",
+        "kucun": "352",
+        "dtime": "2013年4月18日",
+        "desc": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,5 @@
+#!/usr/bin/expect
+spawn "./bin/dp-gw"
+expect "password:"
+exp_send "密码\r"
+interact

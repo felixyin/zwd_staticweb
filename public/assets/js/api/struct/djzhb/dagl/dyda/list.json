@@ -1,0 +1,16 @@
+{
+  "menu": {
+    "menu": "档案管理",
+    "menu2": "党员档案"
+  },
+  "schema": {
+    "id": 1,
+    "branch": "所属机构",
+    "username": "姓名",
+    "idcard": "身份证",
+    "pic": "url,url,",
+    "type": "党员类别",
+    "viwu": "职务",
+    "files": "f，f,"
+  }
+}

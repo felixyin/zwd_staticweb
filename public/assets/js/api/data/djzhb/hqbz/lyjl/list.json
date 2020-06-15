@@ -1,0 +1,33 @@
+{
+  "isAlert": false,
+  "status": 200,
+  "resultData": {
+    "total": 2,
+    "totalPage": 10,
+    "hint": "",
+    "limit": 1,
+    "page": 1,
+    "status": 200,
+    "data": [
+      {
+        "id": "0",
+        "oc_id": "1",
+        "name": "拖把",
+        "cout": "3",
+        "dept": "行政部门",
+        "username": "张晓明",
+        "dtime": "2020年5月7日",
+        "desc": ""
+      },
+      {
+        "id": "1",
+        "name": "桌子",
+        "cout": "15",
+        "dept": "行政部门",
+        "username": "李华",
+        "dtime": "2020年5月23日",
+        "desc": ""
+      }
+    ]
+  }
+}

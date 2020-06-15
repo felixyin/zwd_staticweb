@@ -1,0 +1,401 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1489",
+      "name": "团",
+      "font_class": "tuan",
+      "unicode": "f0230",
+      "unicode_decimal": 983600
+    },
+    {
+      "icon_id": "14727",
+      "name": "社区",
+      "font_class": "shequ",
+      "unicode": "f02a4",
+      "unicode_decimal": 983716
+    },
+    {
+      "icon_id": "436155",
+      "name": "生活",
+      "font_class": "13",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "521957",
+      "name": "工会",
+      "font_class": "gonghui",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "551267",
+      "name": "财务",
+      "font_class": "caiwu",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "569404",
+      "name": "文体",
+      "font_class": "wenti",
+      "unicode": "e680",
+      "unicode_decimal": 59008
+    },
+    {
+      "icon_id": "583000",
+      "name": "廉政建设",
+      "font_class": "lianzhengjianshe",
+      "unicode": "e65f",
+      "unicode_decimal": 58975
+    },
+    {
+      "icon_id": "598002",
+      "name": "会议 开会 讨论",
+      "font_class": "huiyikaihuitaolun",
+      "unicode": "e651",
+      "unicode_decimal": 58961
+    },
+    {
+      "icon_id": "741255",
+      "name": "其他",
+      "font_class": "other",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "970746",
+      "name": "培训",
+      "font_class": "peixun",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "1048856",
+      "name": "回复",
+      "font_class": "icon_reply",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "1149090",
+      "name": "动态",
+      "font_class": "dongtai",
+      "unicode": "e6a7",
+      "unicode_decimal": 59047
+    },
+    {
+      "icon_id": "1200047",
+      "name": "党务公开",
+      "font_class": "dangwugongkai",
+      "unicode": "e6c7",
+      "unicode_decimal": 59079
+    },
+    {
+      "icon_id": "1734222",
+      "name": "大数据",
+      "font_class": "dashujuzhenghe",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "1946640",
+      "name": "智慧",
+      "font_class": "zhihui",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "2001100",
+      "name": "宗教设施",
+      "font_class": "zongjiaosheshi",
+      "unicode": "e695",
+      "unicode_decimal": 59029
+    },
+    {
+      "icon_id": "2029536",
+      "name": "学习",
+      "font_class": "xuexi",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "2252180",
+      "name": "媒体文件",
+      "font_class": "meitiwenjian",
+      "unicode": "e674",
+      "unicode_decimal": 58996
+    },
+    {
+      "icon_id": "2726793",
+      "name": "生活会暨民主评议工作",
+      "font_class": "shenghuohuijiminzhupingyigongzuo",
+      "unicode": "e515",
+      "unicode_decimal": 58645
+    },
+    {
+      "icon_id": "2959123",
+      "name": "组织机构",
+      "font_class": "zuzhijigou",
+      "unicode": "e63c",
+      "unicode_decimal": 58940
+    },
+    {
+      "icon_id": "3908422",
+      "name": "公开",
+      "font_class": "gongkai",
+      "unicode": "e636",
+      "unicode_decimal": 58934
+    },
+    {
+      "icon_id": "4251748",
+      "name": "评论",
+      "font_class": "pinglun",
+      "unicode": "e648",
+      "unicode_decimal": 58952
+    },
+    {
+      "icon_id": "5085760",
+      "name": "网格开",
+      "font_class": "wanggekai",
+      "unicode": "e783",
+      "unicode_decimal": 59267
+    },
+    {
+      "icon_id": "6442593",
+      "name": "舆情",
+      "font_class": "yuqing",
+      "unicode": "e6b6",
+      "unicode_decimal": 59062
+    },
+    {
+      "icon_id": "6450417",
+      "name": "工委制度",
+      "font_class": "gongweizhidu",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    },
+    {
+      "icon_id": "7157725",
+      "name": "文体教育",
+      "font_class": "wentijiaoyu",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "7157982",
+      "name": "智慧党建平台",
+      "font_class": "Party-construction",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "8238291",
+      "name": "活动",
+      "font_class": "huodong",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "8452502",
+      "name": "党建大数据",
+      "font_class": "dangjiandashuju",
+      "unicode": "e6bb",
+      "unicode_decimal": 59067
+    },
+    {
+      "icon_id": "8452503",
+      "name": "党费收缴",
+      "font_class": "dangfeishoujiao",
+      "unicode": "e6bc",
+      "unicode_decimal": 59068
+    },
+    {
+      "icon_id": "8452508",
+      "name": "发展党员",
+      "font_class": "fazhandangyuan",
+      "unicode": "e6bd",
+      "unicode_decimal": 59069
+    },
+    {
+      "icon_id": "8452518",
+      "name": "基层换届",
+      "font_class": "jicenghuanjie",
+      "unicode": "e6be",
+      "unicode_decimal": 59070
+    },
+    {
+      "icon_id": "8452525",
+      "name": "三会一课",
+      "font_class": "sanhuiyike",
+      "unicode": "e6c0",
+      "unicode_decimal": 59072
+    },
+    {
+      "icon_id": "8718269",
+      "name": "规划",
+      "font_class": "guihua",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "8843156",
+      "name": "宣传",
+      "font_class": "xuanchuan",
+      "unicode": "e63f",
+      "unicode_decimal": 58943
+    },
+    {
+      "icon_id": "9383928",
+      "name": "发布",
+      "font_class": "fabu",
+      "unicode": "e532",
+      "unicode_decimal": 58674
+    },
+    {
+      "icon_id": "9410144",
+      "name": "宗教",
+      "font_class": "zongjiao",
+      "unicode": "e659",
+      "unicode_decimal": 58969
+    },
+    {
+      "icon_id": "9833356",
+      "name": "大数据",
+      "font_class": "dashuju",
+      "unicode": "e91f",
+      "unicode_decimal": 59679
+    },
+    {
+      "icon_id": "9833396",
+      "name": "智慧",
+      "font_class": "zhihui1",
+      "unicode": "e921",
+      "unicode_decimal": 59681
+    },
+    {
+      "icon_id": "10232770",
+      "name": "公开课",
+      "font_class": "gongkaike",
+      "unicode": "e78d",
+      "unicode_decimal": 59277
+    },
+    {
+      "icon_id": "10257596",
+      "name": "救助帮困",
+      "font_class": "weibiaoti--",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    },
+    {
+      "icon_id": "10268980",
+      "name": "服务制度",
+      "font_class": "fuwuzhidu",
+      "unicode": "e6a0",
+      "unicode_decimal": 59040
+    },
+    {
+      "icon_id": "11053445",
+      "name": "宗教",
+      "font_class": "minzuzongjiao",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "12069411",
+      "name": "转发",
+      "font_class": "zhuanfa",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "12088474",
+      "name": "06新时代",
+      "font_class": "xinshidai",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "12732492",
+      "name": "组织",
+      "font_class": "zuzhi",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "12817271",
+      "name": "人道救助",
+      "font_class": "rendaojiuzhu",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "12842657",
+      "name": "w_村庄",
+      "font_class": "w_cunzhuang",
+      "unicode": "e664",
+      "unicode_decimal": 58980
+    },
+    {
+      "icon_id": "12875280",
+      "name": "党建",
+      "font_class": "dangjian",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "13042032",
+      "name": "谣言",
+      "font_class": "yaoyan",
+      "unicode": "e7a3",
+      "unicode_decimal": 59299
+    },
+    {
+      "icon_id": "13556105",
+      "name": "红十字_医疗",
+      "font_class": "hongshizi_yiliao",
+      "unicode": "e6b4",
+      "unicode_decimal": 59060
+    },
+    {
+      "icon_id": "13638671",
+      "name": "考评",
+      "font_class": "kaoping",
+      "unicode": "e652",
+      "unicode_decimal": 58962
+    },
+    {
+      "icon_id": "14004107",
+      "name": "机关单位",
+      "font_class": "jiguandanwei",
+      "unicode": "e698",
+      "unicode_decimal": 59032
+    },
+    {
+      "icon_id": "14126596",
+      "name": "网格",
+      "font_class": "wangge",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "14442950",
+      "name": "廉政举报",
+      "font_class": "lianzhengjubao",
+      "unicode": "e75e",
+      "unicode_decimal": 59230
+    },
+    {
+      "icon_id": "14650508",
+      "name": "共青团委员会",
+      "font_class": "gongqingtuanweiyuanhui",
+      "unicode": "e6e9",
+      "unicode_decimal": 59113
+    }
+  ]
+}

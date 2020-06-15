@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" type="text/css">
+    <link rel="stylesheet" href="./css/zhglyxt_List.css" type="text/css"/>
+    <link rel="stylesheet" href="./layui-v2.5.6/css/layui.css" media="all">
+    <title>综合管理一张图</title>
+</head>
+<body id="Main">
+<!--<div class="topscreen">-->
+<!--    <a type="button" id="fullscreen2" class="btn btn-default visible-lg visible-md">-->
+<!--        <i class="fa fa-refresh" aria-hidden="true"></i> 切换全屏-->
+<!--    </a>-->
+<!--</div>-->
+<div id="container"></div>
+<div style="right:-230px;" class="contactusdiyou">
+    <div class="hoverbtn"><span> </span><span> </span>
+        <img class="hoverimg" src="images/hoverbtnbg.gif" height="9" width="13"/></div>
+    <div class="conter">
+        <div class="div_any01">
+            <div class="div_any_child">
+                <div class="div_any_title">民心社区</div>
+                <p id="pieChart" class="p_chart"> 总人口数量： </p>
+            </div>
+            <div class="div_any_child">
+                <div class="div_any_title">民心社区</div>
+                <p id="pieChart2" class="p_chart"></p>
+            </div>
+            <div class="div_any_child">
+                <div class="div_any_title">民心社区</div>
+                <p id="pieChart3" class="p_chart"></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="diyoumask"></div>
+<div id="wrapper">
+    <!-- Sidebar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation"
+         style="overflow: hidden;">
+        <iframe src="OrgTree.html" style="width: 100%;height: 100%;background: #FFFFFF;margin: 0;padding: 0;"
+                scrolling="auto" frameborder="0"></iframe>
+    </nav>
+    <!-- /#sidebar-wrapper -->
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas"><span
+                class="hamb-top"></span> <span class="hamb-middle"></span> <span class="hamb-bottom"></span></button>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+</div>
+<div class="footer">
+    <form class="layui-form" action="">
+        <div class="checklist">
+            <input type="checkbox" name="sqgrid" lay-filter="sqgrid" title="社区网格" checked="">
+            <input type="checkbox" name="partygroup" lay-filter="partygroup" title="党小组" checked="">
+            <input type="checkbox" name="police" lay-filter="police" title="派出所" checked="">
+        </div>
+    </form>
+</div>
+<script src="./js/json.js"></script>
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<script src="./bootstrap.min.js"></script>
+<script src="https://webapi.amap.com/maps?v=1.4.15&key=00dc968653b9f8fdb72e2a703108a498"></script>
+<script src="./layui-v2.5.6/layui.js" charset="utf-8"></script>
+<script type="text/javascript">
+    var map = new AMap.Map("container", {
+        center: [111.726569, 40.787525],
+        mapStyle: "amap://styles/darkblue",
+        zoom: 14
+    });
+    var polygonArray = [];
+    for (var i = 0, len = paths.length; i < len; i++) {
+        var sName = paths[i][1].toString();
+        var text = new AMap.Text({
+            text: sName,
+            anchor: 'center', // 设置文本标记锚点
+            cursor: 'pointer',
+            angle: 0,
+            style: {
+                'padding': '.3rem 0.5rem',
+                'margin-bottom': '1rem',
+                'border-radius': '.25rem',
+                'background-color': 'rgba(135, 206,250, .9)',
+                'width': '8rem',
+                'border-width': 0,
+                'box-shadow': '0 2px 6px 0 rgba(114, 124, 245, .5)',
+                'text-align': 'center',
+                'font-size': '10px',
+                'color': 'rgba(8, 24, 50, .9)'
+            },
+
+            position: [paths[i][5].toString().split(",")[0], paths[i][5].toString().split(",")[1]]
+
+        });
+
+        text.setMap(map);
+
+        var polygon = new AMap.Polygon({
+            path: paths[i][2],
+            strokeColor: "#FF33FF",
+            strokeWeight: 6,
+            strokeOpacity: 0.2,
+            fillOpacity: 0.4,
+            fillColor: '#1791fc',
+            zIndex: 50,
+        });
+        map.add(polygon);
+
+        polygon.on('click', function (e) {
+            showinfo();
+            //paths[i][1].toString()
+            $("#SName").text(sName);
+        });
+        polygon.on('dblclick', showInfoDbClick, 'i1');
+    }
+
+    // 缩放地图到合适的视野级别
+    function showInfoClick() {
+//			   map.remove(polygon2)
+//			   map.add(polygon2_h)
+//				showinfo();
+//			   console.log(id);
+
+    }
+
+    function showInfoDbClick(e) {
+        window.location.href = "map_grid.html";
+    }
+
+    $(function () {
+        $(".contactusdiyou").hover(function () {
+            showinfo()
+        }, function () {
+            hiddeninfo()
+        });
+    });
+
+    function showinfo() {
+        $(".hoverimg").attr("src", "images/hoverbtnbg1.gif");
+        $('.diyoumask').fadeIn();
+        $('.contactusdiyou').animate({right: '0'}, 300);
+    }
+
+    function hiddeninfo() {
+        $(".hoverimg").attr("src", "images/hoverbtnbg.gif");
+        $('.contactusdiyou').animate({right: '-230px'}, 300, function () {
+        });
+        $('.diyoumask').fadeOut();
+    }
+
+    //控制全屏
+    function enterfullscreen() { //进入全屏
+        $("#fullscreen").html("退出全屏");
+        var docElm = document.documentElement;
+        var elm = document.getElementById('Main');
+        //W3C
+        if (docElm.requestFullscreen) {
+            docElm.requestFullscreen();
+        }
+        //FireFox
+        else if (docElm.mozRequestFullScreen) {
+            docElm.mozRequestFullScreen();
+        }
+        //Chrome等
+        else if (docElm.webkitRequestFullScreen) {
+            docElm.webkitRequestFullScreen();
+        }
+        //IE11
+        else if (elm.msRequestFullscreen) {
+            elm.msRequestFullscreen();
+        }
+    }
+
+    function exitfullscreen() { //退出全屏
+        $("#fullscreen").html("切换全屏");
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        } else if (document.mozCancelFullScreen) {
+            document.mozCancelFullScreen();
+        } else if (document.webkitCancelFullScreen) {
+            document.webkitCancelFullScreen();
+        } else if (document.msExitFullscreen) {
+            document.msExitFullscreen();
+        }
+    }
+
+    var a = 0;
+    $('#fullscreen').on('click', function () {
+        a++;
+        a % 2 == 1 ? enterfullscreen() : exitfullscreen();
+    });
+
+    $(document).ready(function () {
+        var trigger = $('.hamburger'),
+            overlay = $('.overlay'),
+            isClosed = false;
+
+        trigger.click(function () {
+            hamburger_cross();
+        });
+
+        function hamburger_cross() {
+
+            if (isClosed == true) {
+                overlay.hide();
+                trigger.removeClass('is-open');
+                trigger.addClass('is-closed');
+                isClosed = false;
+            } else {
+                overlay.show();
+                trigger.removeClass('is-closed');
+                trigger.addClass('is-open');
+                isClosed = true;
+            }
+        }
+
+        $('[data-toggle="offcanvas"]').click(function () {
+            $('#wrapper').toggleClass('toggled');
+        });
+    });
+
+    layui.use('form', function () {
+        var form = layui.form;
+
+
+        form.on('checkbox(sqgrid)', function (data) {
+            if (data.elem.checked) {
+                map.add(polygonList);
+            } else {
+                map.remove(polygonList);
+
+            }
+        });
+        form.render();
+    });
+
+</script>
+<script>
+    //远程连接全屏
+    $("#fullscreen2").click(function () {
+        toggleFullscreen();
+    });
+
+    var toggleFullscreen = function () {
+        if (document.fullscreenElement ||
+            document.mozFullScreenElement ||
+            document.webkitFullscreenElement ||
+            document.msFullscreenElement) {
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
+            } else if (document.mozCancelFullScreen) {
+                document.mozCancelFullScreen();
+            } else if (document.webkitExitFullscreen) {
+                document.webkitExitFullscreen();
+            } else if (document.msExitFullscreen) {
+                document.msExitFullscreen();
+            }
+        } else {
+            if (document.documentElement.requestFullscreen) {
+                document.documentElement.requestFullscreen();
+            } else if (document.documentElement.mozRequestFullScreen) {
+                document.documentElement.mozRequestFullScreen();
+            } else if (document.documentElement.webkitRequestFullscreen) {
+                document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+            } else if (document.body.msRequestFullscreen) {
+                document.body.msRequestFullscreen();
+            }
+        }
+
+        //更新iframe定位
+        update_iframe_pos();
+    }
+
+    //退出全屏时恢复全屏按钮、iframe的定位方式
+    var update_iframe_pos = function () {
+        if (document.fullscreenElement ||
+            document.mozFullScreenElement ||
+            document.webkitFullscreenElement ||
+            document.msFullscreenElement) {
+            $("#ifr_diagnose").addClass("ifr_fixed");
+            $("#fullscreen").addClass("full_fixed");
+        } else {
+            $("#ifr_diagnose").removeClass("ifr_fixed");
+            $("#fullscreen").removeClass("full_fixed");
+        }
+    }
+
+    //添加退出全屏时的监听事件
+    window.addEventListener("fullscreenchange", function (e) {
+        update_iframe_pos();
+    });
+    window.addEventListener("mozfullscreenchange", function (e) {
+        update_iframe_pos();
+    });
+    window.addEventListener("webkitfullscreenchange", function (e) {
+        update_iframe_pos();
+    });
+    window.addEventListener("msfullscreenchange", function (e) {
+        update_iframe_pos();
+    });
+</script>
+</body>
+</html>

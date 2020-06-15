@@ -1,0 +1,32 @@
+{
+  "isAlert": false,
+  "resultData": {
+    "total": 4,
+    "data": [
+      {
+        "url": "http://127.0.0.1:8000/page/djzhb/sfw/fwdw.html",
+        "name": "发文（党委）",
+        "icon": "icon-dangweifawen",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://127.0.0.1:8000/page/djzhb/sfw/fwzf.html",
+        "name": "发文（政府）",
+        "icon": "icon-shengzhengfufawenku",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://127.0.0.1:8000/page/djzhb/sfw/swdw.html",
+        "name": "收文（党委）",
+        "icon": "icon-dangweishouwen",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://127.0.0.1:8000/page/djzhb/sfw/swzf.html",
+        "name": "收文（政府）",
+        "icon": "icon-shengzhengfushouwenku",
+        "target": "main_frame"
+      }
+    ]
+  }
+}

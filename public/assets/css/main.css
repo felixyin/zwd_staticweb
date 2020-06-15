@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0px;padding:0px;}
+body {font-family:"微软雅黑","Arial","Times New Roman";}
+a:focus {outline:none;}
+a {text-decoration:none;}
+a:hover {text-decoration:none;}
+ul, li {list-style:none;}
+img {border:none;}
+.left{ float:left;}
+.right{ float:right;}
+.clear{ clear:both;}
+
+
+
+
+
+
+.i_main{ width:1075px;display:block; position:absolute; top:10%; left:50%; margin-left:-537.5px;}
+.logo{ width:675px; height:155px; float:right;padding:0 15px 0 0}
+.i_slogan{ float:right;  width:675px; padding:0 15px 0 0; font-size:14px; color:#faffab; line-height:26px; padding:15px 0 50px 0; font-family:"微软雅黑"}
+.i_slogan strong{ font-size:18px;}
+
+.i_member{ width:66px; height:180px; background-color:rgba(0,0,0,0.2); border-radius:9px; padding:10px 0; position:relative; position:absolute; right:20px; top:200px;}
+.i_member li{}
+.i_member li a{ width:100%; height:50px; float:left; margin:5px 0; position:relative}
+.i_member01{ background:url(/assets/img/main/tb09.png) center center no-repeat}
+.i_member02{ background:url(/assets/img/main/tb10.png) center center no-repeat}
+.i_member03{ background:url(/assets/img/main/tb11.png) center center no-repeat}
+.i_member li span{ width:22px; height:22px; border-radius:50%; background:#ff0000; font-size:14px; text-align:center; line-height:22px; display:block;}
+.i_member02_quantity{ position:absolute; right:3px; top:80px; color:#fff;}
+
+.i_member03_quantity{ position:absolute; right:3px; top:140px; color:#fff;}
+
+
+.nav{ width:1075px;}
+.nav_list{ float:left;}
+.nav_list li{ float:left; position:relative; margin:0 15px 15px 0;}
+.nav_list_box01{ width:200px; height:160px; border-radius:9px; background-color:rgba(191,175,175,0.7); text-align:center; font-size:18px; color:#fff;}
+.nav_list li i{ width:66px; height:55px; position:absolute; margin-left:50%; left:-33px; top:25px;}
+.i_tb01{ background:url(/assets/img/main/tb01.png) center top no-repeat;}
+.i_tb02{ background:url(/assets/img/main/tb02.png) center top no-repeat;}
+.i_tb03{ background:url(/assets/img/main/tb03.png) center top no-repeat;}
+.i_tb04{ background:url(/assets/img/main/tb04.png) center top no-repeat;}
+.i_tb05{ background:url(/assets/img/main/tb05.png) center top no-repeat;}
+.i_tb06{ background:url(/assets/img/main/tb06.png) center top no-repeat;}
+.i_tb07{ background:url(/assets/img/main/tb07.png) center top no-repeat;}
+.i_tb08{ background:url(/assets/img/main/tb08.png) center top no-repeat;}
+
+.nav_list li span{ width:100%; text-align:center; margin-top:105px; float:left;}
+.nav_list_box02{ width:415px; height:160px; border-radius:9px; background-color:rgba(191,175,175,0.7); text-align:center; font-size:18px; color:#fff;}
+.nav_list li a:hover{ background-color:rgba(228,161,28,0.8);}
+
+
+
+
+
+
+
+
+

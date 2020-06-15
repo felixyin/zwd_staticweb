@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>会议管理</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/assets/lib/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="/assets/lib/viewer/viewer.min.css"/>
+    <link rel="stylesheet" href="/assets/css/common/style.css" media="all">
+    <link rel="stylesheet" href="/assets/css/jcddjs/tw/hygl/list.css" media="all">
+    
+    <style type="text/css">
+        .layui-btn-normal {
+            background-color: rgb(240,40,60)!important;
+        }
+        .layui-layer-btn0{
+            background-color: rgb(240,40,60)!important;
+            border-color: rgb(240,40,60)!important;
+        }
+        .layui-layer-title{
+            background-color: #f88e85!important;
+        }
+        .layui-laypage .layui-laypage-curr .layui-laypage-em{
+            background-color: lightpink!important;
+        }
+    </style>
+    
+</head>
+<body>
+<div class="layui-fluid" style="padding-top:10px;">
+	<span class="layui-breadcrumb">
+	  <a><cite>首页</cite></a>
+	  <a><cite>会议管理</cite></a>
+	</span>
+    <!-- 右上角按钮 -->
+        <div style="float:right;">
+            <button class="layui-btn layui-btn-sm layui-btn-normal"  onclick="addDataFunc()">
+                <i class="layui-icon">&#xe654;</i>
+                添加
+            </button>
+        </div>
+
+    <div class="layui-clear"></div>
+
+    <blockquote class="layui-elem-quote layui-quote-nm " style="margin-top:1px;">
+        <form class="layui-form BTNSHOW BTNSHOW_QUERY" action="javascript:;" id="query_condition">
+            <div class="layui-form-item" style="margin-bottom:0;">
+                <div class="layui-inline" style="width:100%">
+                    <div class="searchbut">
+                        <!-- <div class="butsure">
+                                <label class="layui-form-label">查询条件：</label>
+                             </div> -->
+                        <div id="condition_class" class="layui-inline">
+                            
+                            <div class="layui-input-inline">
+                                <input type="text" name="zhuusername" id="zhuusername-id" defaultmsg="主会人"
+                                       placeholder="主会人" lay-filter='zhuusername' class="layui-input"
+                                       condition=""/>
+                            </div>
+                            
+                            <div class="layui-input-inline">
+                                <input type="text" name="huitime" id="huitime-id" defaultmsg="会议时间"
+                                       placeholder="会议时间" lay-filter='huitime' class="layui-input"
+                                       condition=""/>
+                            </div>
+                            
+                            <div class="layui-input-inline">
+                                <input type="text" name="name" id="name-id" defaultmsg="会议名称"
+                                       placeholder="会议名称" lay-filter='name' class="layui-input"
+                                       condition=""/>
+                            </div>
+                            
+                            <div class="layui-input-inline">
+                                <input type="text" name="dtime" id="dtime-id" defaultmsg="记录日期"
+                                       placeholder="记录日期" lay-filter='dtime' class="layui-input"
+                                       condition=""/>
+                            </div>
+                            
+                            <div class="layui-input-inline">
+                                <input type="text" name="files" id="files-id" defaultmsg="附件"
+                                       placeholder="附件" lay-filter='files' class="layui-input"
+                                       condition=""/>
+                            </div>
+                            
+                            <div class="layui-input-inline" id="searchbutton">
+                                <button class="layui-btn layui-btn-normal" lay-submit lay-filter="queryData">
+                                    <i class="layui-icon ">&#xe615</i>
+                                </button>
+                                <button class="layui-btn layui-btn-normal" id="Reload">
+                                    <i title="刷新" class="layui-icon ">&#xe669</i>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </blockquote>
+
+    <!--主题表格数据开始-->
+    <table id="tabledata" lay-filter="test"></table>
+
+    <div class="layui-tab-item">
+        <div id="pageDemo"></div>
+    </div>
+</div>
+
+<!--编辑表格弹出层开始-->
+<form id="form_edit" class="layui-form" style=" display:none;margin-top:30px;" action="">
+    <input type="hidden" id="id" name="id" autocomplete="off" class="layui-input">
+    
+    <div class="layui-form-item">
+        
+            <label class="layui-form-label">主会人</label>
+            <div class="layui-input-inline">
+                <input type="text" name="zhuusername" id="zhuusername_edit"
+                       class="layui-input"  placeholder="主会人"/>
+            </div>
+        
+        
+            <label class="layui-form-label">
+<!--                <span style="color:red;">*</span>-->
+                会议时间</label>
+            <div class="layui-input-inline">
+                <input type="text" name="huitime" id="huitime_edit"
+                       class="layui-input"  placeholder="会议时间"/>
+            </div>
+        
+    </div>
+    
+    <div class="layui-form-item">
+        
+            <label class="layui-form-label">会议名称</label>
+            <div class="layui-input-inline">
+                <input type="text" name="name" id="name_edit"
+                       class="layui-input"  placeholder="会议名称"/>
+            </div>
+        
+        
+            <label class="layui-form-label">
+<!--                <span style="color:red;">*</span>-->
+                记录日期</label>
+            <div class="layui-input-inline">
+                <input type="text" name="dtime" id="dtime_edit"
+                       class="layui-input"  placeholder="记录日期"/>
+            </div>
+        
+    </div>
+    
+    <div class="layui-form-item">
+        
+            <label class="layui-form-label">附件</label>
+            <div class="layui-input-inline">
+                <input type="text" name="files" id="files_edit"
+                       class="layui-input"  placeholder="附件"/>
+            </div>
+        
+        
+    </div>
+    
+
+    <div class="layui-form-item" id="bntgroup">
+        <div class="from_but">
+            <button class="layui-btn layui-btn-normal" id="queryCondBtn" lay-submit lay-filter="editInfo">提交</button>
+        </div>
+    </div>
+</form>
+
+
+<script src="/assets/lib/jquery/jquery-3.2.1.min.js"></script>
+<script src="/assets/js/app.js"></script>
+<script src="/assets/js/common/range.js"></script>
+<script src="/assets/lib/viewer/viewer.min.js"></script>
+<script src="/assets/js/common/validate.js"></script>
+<script src="/assets/lib/layui/layui.all.js"></script>
+<script src="/assets/js/jcddjs/tw/hygl/list.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+{
+  "isAlert": false,
+  "resultData": {
+    "total": 4,
+    "data": [
+      {
+        "url": "http://127.0.0.1:8000/page/djzhb/dagl/cydj.html",
+        "name": "查阅登记",
+        "icon": "icon-chayue",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://127.0.0.1:8000/page/djzhb/dagl/dyda.html",
+        "name": "党员档案",
+        "icon": "icon-dangyuandangan",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://127.0.0.1:8000/page/djzhb/dagl/hyda.html",
+        "name": "会议档案",
+        "icon": "icon-meeting",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://127.0.0.1:8000/page/djzhb/dagl/wjda.html",
+        "name": "文件档案",
+        "icon": "icon-buoumaotubiao25",
+        "target": "main_frame"
+      }
+    ]
+  }
+}

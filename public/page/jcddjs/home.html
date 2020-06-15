@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>智慧党建网络</title>
+    <meta name="keywords" content="智慧党建网络">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/lib/layui/css/layui.css">
+    <link rel="stylesheet" href="/assets/css/jcddjs/header.css">
+    <link rel="stylesheet" href="/assets/css/jcddjs/partyGovernment.css">
+</head>
+<body>
+<div class="layui-container" id="mainConter">
+    <div class="tophtml">
+        <script type="text/html" id="home-item-tpl">
+            {{#  layui.each(d.?, function(index, item){ }}
+            <div class="layui-col-md2-4 layui-col-lg2-4">
+                <img class="iconpng" src="{{item.icon}}"/>
+                <p class="iconfont">{{item.name}}</p>
+            </div>
+            {{#  }); }}
+        </script>
+        <div class="layui-row" id="home-item-container">
+            <div class="layui-col-md2-4 layui-col-lg2-4">
+                <img class="iconpng" src="/assets/img/jcddjs/home/4.png"/>
+                <p class="iconfont">党组织结构</p>
+            </div>
+            <div class="layui-col-md2-4 layui-col-lg2-4">
+                <img class="iconpng" src="/assets/img/jcddjs/home/2.png"/>
+                <p class="iconfont">党建大数据</p>
+            </div>
+            <div class="layui-col-md2-4 layui-col-lg2-4">
+                <a href="../DevelopPeople/Develop_Index.html">
+                    <img class="iconpng" src="/assets/img/jcddjs/home/6.png"/>
+                    <p class="iconfont">发展党员</p>
+                </a>
+            </div>
+            <div class="layui-col-md2-4 layui-col-lg2-4">
+                <img class="iconpng" src="/assets/img/jcddjs/home/1.png"/>
+                <p class="iconfont">党费</p>
+            </div>
+            <div class="layui-col-md2-4 layui-col-lg2-4">
+                <img class="iconpng" src="/assets/img/jcddjs/home/13.png"/>
+                <p class="iconfont">在职党员进社区</p>
+            </div>
+        </div>
+    </div>
+    <div class="bottomhtml">
+        <div class="layui-row" style="padding-top:1%;">
+            <div class="layui-col-md2-4 layui-col-lg2-4">
+                <img class="iconpng" src="/assets/img/jcddjs/home/9.png"/>
+                <p class="iconfont">区域化党建</p>
+            </div>
+            <div class="layui-col-md2-4 layui-col-lg2-4">
+                <img class="iconpng" src="/assets/img/jcddjs/home/15.png"/>
+                <p class="iconfont">组织生活</p>
+            </div>
+            <div class="layui-col-md2-4 layui-col-lg2-4">
+                <img class="iconpng" src="/assets/img/jcddjs/home/8.png"/>
+                <p class="iconfont">民主评议党员</p>
+            </div>
+            <div class="layui-col-md2-4 layui-col-lg2-4">
+                <img class="iconpng" src="/assets/img/jcddjs/home/10.png"/>
+                <p class="iconfont">三会一课</p>
+            </div>
+            <div class="layui-col-md2-4 layui-col-lg2-4">
+                <img class="iconpng" src="/assets/img/jcddjs/home/14.png"/>
+                <p class="iconfont">主题、党日活动</p>
+            </div>
+        </div>
+        <div class="layui-row" style="margin-top: 2%;">
+            <div class="layui-col-md2-4 layui-col-lg2-4">
+                <img class="iconpng" src="/assets/img/jcddjs/home/12.png"/>
+                <p class="iconfont">四议俩公开</p>
+            </div>
+            <div class="layui-col-md2-4 layui-col-lg2-4">
+                <img class="iconpng" src="/assets/img/jcddjs/home/7.png"/>
+                <p class="iconfont">换届选举</p>
+            </div>
+            <div class="layui-col-md2-4 layui-col-lg2-4">
+                <img class="iconpng" src="/assets/img/jcddjs/home/3.png"/>
+                <p class="iconfont">党员学习教育</p>
+            </div>
+            <div class="layui-col-md2-4 layui-col-lg2-4">
+                <img class="iconpng" src="/assets/img/jcddjs/home/5.png"/>
+                <p class="iconfont">督导考评</p>
+            </div>
+            <div class="layui-col-md2-4 layui-col-lg2-4">
+                <img class="iconpng" src="/assets/img/jcddjs/home/11.png"/>
+                <p class="iconfont">三项制度</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="/assets/lib/jquery/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="/assets/lib/layui/layui.all.js"></script>
+<script type="text/javascript" src="/assets/lib/optiscroll/optiscroll.min.js"></script>
+<script type="text/javascript" src="/assets/js/api/api.js"></script>
+<!--<script type="text/javascript" src="/assets/js/jcddjs/home/index.js"></script>-->
+</body>
+</html>

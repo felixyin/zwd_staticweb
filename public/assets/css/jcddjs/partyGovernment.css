@@ -1,0 +1,504 @@
+/*
+* @Author: xuebingsi
+* @Date:   2019-04-01 13:37:17
+* @Last Modified by:   zhibinm
+* @Last Modified time: 2019-04-01 13:37:19
+*/
+*{
+	padding:0px;
+	margin: 0px;
+	
+}
+body {
+    width: 100%;
+    min-height: 100%;
+    font: 14px Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-serif;
+}
+
+img{
+	border: 0px;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+
+.font_style {
+    color: #999999;
+}
+.font_style2{
+	color:#c40311
+}
+.font-size1{
+	font-size:16px;
+}
+.font-size2{
+	font-size:17px;
+}
+.font-size3 {
+    font-size: 22px;
+}
+.home-bg{
+    /*background:url(../images/NewHome.png) no-repeat;
+    background-size: 100%; 
+    overflow: hidden;*/
+   background: url(../images/NewHome.png) no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    /* position: fixed; */
+    background-position: center center;
+    background-attachment: fixed;
+}
+.home_top{
+	text-align:center;
+	margin-top:60px;
+}
+.home_top .nextspan{
+	display: inline-block;
+	/*width: 33%;*/
+}
+.notice{
+	margin-right: -10px;
+	
+}
+.notice img{
+	margin-left: 10px;
+}
+.font_shadow{ /*字体倒影*/
+	text-align: center;
+	text-shadow: 10px 8px 8px #747677;
+	-moz-text-shadow:10px 8px 8px #747677;
+	-webkit-text-shadow:10px 8px 8px #747677;
+	-ms-text-shadow:10px 8px 8px #747677;
+	color: #fff;
+	font-size:35px;
+	letter-spacing: 5px;
+	font-weight: 500;
+	letter-spacing: 5px;
+	
+}
+.hidediv{
+	background-color: rgba(181,181,181,0.66);
+	text-align: center;
+    position: absolute;
+    z-index: 999999;
+}
+.edit_div li{
+	display: inline-block;
+}
+.font_shadow img{
+	width: 400px;
+}
+.top_logo{
+	width:20%;
+	margin-left: 20px;
+	margin-top:20px;
+}
+.edit_div{
+    text-align: right;
+    cursor: pointer;
+    margin-top: 30px;
+    position: absolute;
+}
+.message_img ,.message_name{
+	line-height: 60px;
+	vertical-align: middle;
+	cursor:default;
+}
+.message_img img{
+	width:25px ;
+}
+.message_img .megicon{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: red;
+    display: inline-block;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: -10px;
+}
+.message_name{
+	color: #fff;
+	font-size:18px;
+	margin-right: 20px;
+}
+.home_conter{
+	width: 90%;
+	margin: 0px auto;
+	text-align:center;
+	margin-top:11%;
+	/*text-align:center;*/
+}
+.itemList{
+	width: 100%;
+	margin-top: 60px;
+	color:blue;
+	font-size:16px ;	
+}
+.itemList li{
+	border:1px solid none;
+	display: inline-block;	
+	border-radius:5px ;
+	cursor: pointer;
+	min-height:220px;
+	margin-right:28px;
+	/*margin-right:40px;*/
+	color:#fff;
+	
+}
+.itemList li a{
+	color:#fff;
+	font-weight:700;
+}
+.itemList li:hover{
+	  border:0px solid #2196F3;
+	  color:#fff;
+	  background: #6666;
+      box-shadow:  0px 0px 5px 3px #e8fdc2 inset; 
+}
+.imgbox{
+	width:100%;
+	text-align: center;
+	height:130px;
+	padding-top:30px;
+}
+.List_odd ,.List_eve{
+	clear:both;
+}
+.List_odd{
+	width:20% ;	
+}
+.List_eve{
+	width:42%;	
+}
+.item_icon{
+	width: 65px;
+/*     height: 45px; */
+	padding:10px 0px;
+}
+.home_footer{
+	width:100%;
+	height:50px;
+	text-align: center;
+	color: #fff;
+	position: fixed;
+	bottom: 0px;
+	font-size: 18px;
+}
+.namebox{
+	margin-bottom:10px;
+	text-align: center;
+	font-size:16pt;
+	color:#fff;
+}
+.itemimg img{
+	margin-top: 6px;
+    width: 13px;
+}
+.itemname{
+	/*margin-left:15px*/
+}
+.itemimg{
+	float:right;
+	margin-right:15px;
+}
+.noticetitle{
+		width:33px !important
+}
+
+/* 添加 */
+.centerdiv{
+	width:1100px;
+	margin:0px auto
+}
+.backindex cite:hover{
+	color:#000;
+}
+.project{
+	margin:0px auto;
+	width:70%;
+}
+.projectlist {
+	width:100%;
+	margin-left:0px;
+}
+
+.projectlist li{
+	display: none;
+	cursor: pointer;
+	padding-top:10px;
+	display: inline-block;
+	height: 45px;
+	text-align: center;
+	/* width: 19%; */
+	padding-left:10px;
+}
+.backbox{
+	width:;
+	height: 35px;
+	border-left: 8px solid #c40311;
+	border-bottom: 1px solid #c40311;
+}
+.backbox p{
+	display: inline-block;
+}
+
+.subprojectlist {
+	width:100%;
+	margin-left:0px;
+	margin-top:25px;
+}
+
+.subprojectlist li{
+	display: none;
+    cursor: pointer;
+    padding-top: 5px;
+    display: inline-block;
+    height: 45px;
+}
+.sublist {
+    width: 47%;
+    text-align: right;
+    float: right;
+}
+.subbackbox{
+    height: 42px;
+    line-height: 42px;
+    margin-left: 0px;
+    /*border-left: 8px solid #c40311;
+    border-bottom: 1px solid #c40311;*/
+}
+.subbackbox p{
+	display: inline-block;
+}
+.tabledata tr{
+    height:35px;
+}
+.tabledata tr:hover, .tabledata td:hover, .tabledata a:hover{
+    color: #007DDB!important;
+    background: #EEEEEE;
+}
+.conterhtml{
+	width:1100px;
+	margin:0px auto
+}
+@media screen and (min-width:1400px){
+	.conterhtml{
+		width:100%
+	}
+}
+.rightDiv{
+	float:left;
+	margin-left:50px;
+	width:240px;
+    height: 600px;
+    overflow-y: auto;
+    margin-top: 60px;
+}
+.selectdiv{
+    background: #c40311!important;
+    color: #fff!important;
+    border-top: 2px solid #2196F3!important;
+}
+.selectdiv a{
+    color: #fff!important;
+}
+.rightDiv li{
+    height: 40px;
+    line-height: 40px;
+    background: #3179d612;
+/*     width: 100%; */
+    padding: 0px 10px;
+    border-top: 2px solid #b8b8b8;
+    margin-bottom:6px;
+}
+.tabledata td:nth-child(1){
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    -ms-line-clamp: 1;
+    -ms-box-orient: vertical;
+    -moz-line-clamp: 1;
+    -moz-box-orient: vertical;
+}
+.rightDiv li:hover{
+    background: #c40311;
+    color: #fff!important;
+    border-top: 2px solid #2196F3;
+}
+.rightDiv li a:hover{
+    color: #fff!important;
+}
+.rightDiv li a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.radiosdiv{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: red;
+    margin-right: 10px;
+}
+
+/* 三务公开 */
+.sanprojectlist {
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 25px;
+}
+.sanbackbox {
+    height: 42px;
+    line-height: 42px;
+    margin-left: 0px;
+}
+.sanprojectlist li {
+    display: none;
+    cursor: pointer;
+    display: inline-block;
+}
+.centettitle {
+    width: 100%;
+    text-align: center;
+    color: #000;
+    border: 1px solid #999;
+}
+.villageelem {
+    color: #fff;
+    background: #c40311;
+}
+.centettitle span {
+    width: 33%;
+    display: inline-block;
+}
+
+.villageelem {
+    color: #fff;
+    background: #c40311;
+}
+.sublist {
+    width: 100%;
+    text-align: right;
+    float: right;
+    height: 50px;
+    line-height: 50px;
+}
+/*财务公开样式*/
+.moneyFinance{
+	border: 3px solid #c8c8c8;
+	display: inline-block;
+	width:300px;
+	height:200px;
+	background-size:100% 100% ;
+}
+.moneyFinance_name{
+	font-size: 18px;
+	height:50px;
+	line-height: 50px;
+	text-align: center;
+	background: #f1f2f3;
+	border-bottom: 3px solid #c8c8c8;
+}
+.moneyFinance_name span{
+	color:#3b81bf
+}
+.moneyFinance_content1, .moneyFinance_content2, .moneyFinance_content3{
+	
+	height: 150px;
+	line-height: 150px;
+    text-align: center;
+}
+.moneyFinance_content1{
+		background: url(../images/timg1.jpg) no-repeat;
+		background-size: 100% 100%;
+}
+.moneyFinance_content2{
+		background: url(../images/timg4.jpg) no-repeat;
+		background-size: 100% 100%;
+}
+.moneyFinance_content3{
+		background: url(../images/timg3.jpg) no-repeat;
+		background-size: 100% 100%;
+}
+.moneyFinance_content a{
+	display: block;
+	
+}
+#tabledata2{
+	margin-left:10px;
+}
+#textcity{
+text-indent: 2em;
+}
+.villageelem{
+	color:#fff;
+	background: #c40311;
+}
+.noneelem{
+	height: 300px;
+}
+
+/* 社会事务办公室 */
+.project_main {
+    margin-top: 10px;
+    text-align: left;
+}
+.submain_left {
+    float: left;
+}
+.submain_right {
+    float: right;
+}
+.project_MainElem {
+    margin: 15px 0px 0px 0px;
+    width: 18%;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    border: 1px solid #999;
+    display: inline-block;
+}
+.project_MainElem a {
+    display: block;
+}
+.project_MainElem:hover{
+    border: 1px solid #fff;
+    background: #c40311;
+    color: #fff!imgportant;
+    cursor: pointer;
+}
+.project_MainElem a:hover{
+    color: #fff!important;
+}
+.centettitle2 {
+    width: 100%;
+    text-align: center;
+}
+.centettitle2 hr {
+    width: 180px;
+    display: inline-block;
+    background-color: #9c9999;
+}
+.Socbackbox {
+    height: 42px;
+    line-height: 42px;
+    margin-left: 0px;
+}
+.centettitle2 .titlename {
+    display: inline-block;
+    margin: 0px 15px;
+}
+.Socprojectlist li {
+    display: none;
+    cursor: pointer;
+    display: inline-block;
+}

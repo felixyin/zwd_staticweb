@@ -1,0 +1,20 @@
+{
+  "isAlert": false,
+  "resultData": {
+    "total": 2,
+    "data": [
+      {
+        "url": "http://127.0.0.1:8000/page/jcddjs/zj/zjhdgl.html",
+        "name": "宗教活动管理",
+        "icon": "icon-zongjiaosheshi",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://127.0.0.1:8000/page/jcddjs/zj/zjzzgl.html",
+        "name": "宗教组织管理",
+        "icon": "icon-minzuzongjiao",
+        "target": "main_frame"
+      }
+    ]
+  }
+}

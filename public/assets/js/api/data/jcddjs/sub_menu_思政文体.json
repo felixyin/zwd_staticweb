@@ -1,0 +1,20 @@
+{
+  "isAlert": false,
+  "resultData": {
+    "total": 2,
+    "data": [
+      {
+        "url": "http://127.0.0.1:8000/page/jcddjs/szwt/wtzx.html",
+        "name": "文体中心",
+        "icon": "icon-wenti",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://127.0.0.1:8000/page/jcddjs/szwt/xsdwmsj.html",
+        "name": "新时代文明实践",
+        "icon": "icon-xinshidai",
+        "target": "main_frame"
+      }
+    ]
+  }
+}

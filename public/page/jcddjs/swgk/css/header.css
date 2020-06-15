@@ -1,0 +1,210 @@
+#head {
+	width: 100%;
+	min-width: 1200px;
+	height: 105px;
+	border-top: 10px solid #c30310;
+	background: #fff;
+}
+a {
+	outline: none;
+	border: none;
+}
+.head {
+	width: 1200px;
+	height: 130px;
+	margin: 0 auto;
+}
+.gh {
+	width: 800px;
+	height: 110px;
+	float: left;
+	margin-top: 0px;
+}
+.gh .sysname{
+	color: #000;
+}
+.top {
+	width: 400px;
+	height: 25px;
+	float: right;
+	margin-top:20px;
+	position: relative;
+	z-index: 22;
+	text-align: center;
+}
+
+.top a {
+	display: inline-block;
+	height: 25px;
+	line-height: 25px;
+	color: #333;
+	font-size: 14px;
+}
+#logon{	
+	 width: 40px;; 
+	 background: #c40311;
+	 color: #fff;
+	 margin-right: -6px;
+	 border: 1px solid #c40311;
+}
+#register{
+    width: 40px;
+  	border: 1px solid; 
+  	border-left:0px;	
+}
+.top a:hover {
+	color: #333;
+}
+
+.znav {
+	width: 486px;
+	height: 48px;
+	float: right;
+	padding-top: 5px;
+}
+
+.znav a {
+	display: block;
+	height: 48px;
+	font-size: 18px;
+	font-weight: normal;
+	text-align: center;
+	line-height: 45px;
+	color: #222;
+	float: left;
+	width: 100px;
+}
+
+.znav a:hover {
+	color: #c3040f;
+}
+
+.znav .nav_item.active {}
+
+a.znavOn {
+	font-weight: bold;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+.user_zhuce {
+	float: right;
+	width: 30px;
+	height: 50px;
+	position: relative;
+}
+
+.top .user_zhuce a {
+	font-size: 13px;
+	color: #c30310;
+	cursor: pointer;
+}
+
+
+/*.top .user_zhuce:hover .show_box {
+	display: block;
+}*/
+
+.top .user_change .icon {
+	padding: 0 3px;
+	font-size: 13px;
+	color: #c30310;
+	line-height: 20px;
+}
+
+.top .show_box {
+	position: absolute;
+	top: 35px;
+	left: 32px;
+	width: 80px;
+	height: 65px;
+	background: url(http://www.gjzwfw.gov.cn/picture/0/1809121415371258889.png) no-repeat;
+	display: none;
+	z-index: 100;
+}
+
+.top .show_zhuce_box {
+	left: -25px;
+	z-index: 150;
+}
+
+.top .show_login_box {
+	z-index: 150;
+}
+
+.top .show_box_list {
+	padding: 10px 0 5px 0;
+}
+
+.top .show_box_list li {
+	line-height: 26px;
+	text-align: center;
+}
+
+.top .show_box_list a {
+	font-size: 13px;
+	line-height: 26px;
+	height: 26px;
+	color: #333;
+}
+
+.top .show_box_list a:hover {
+	color: #c30310;
+}
+
+.anker {
+	position: relative;
+	z-index: 22
+}
+
+.xiangtu_Xy {
+	width: 100%;
+	height: 636 !important;
+	padding: 16px;
+	font-size: 15px 0;
+	line-height: 1.8em;
+	overflow-y: auto;
+}
+
+.ImgMz {
+	width: 100%;
+	height: auto !important;
+}
+
+.xiangtu_Xy img {
+	max-height: none !important;
+}
+
+.section_32 {
+	margin-left: 0;
+}
+
+#cjwt_tit .zhulisy {
+	padding-left: 0 !important;
+}
+
+#section5 .zhulisy {
+	padding-left: 0 !important;
+}
+
+.section_32_02 {
+	height: 14px;
+	padding-top: 6px;
+}
+
+.section_32 {
+	padding-bottom: 20px;
+}
+
+#section4,
+#section5,
+#sdyj_tit {
+	margin-bottom: 20px
+}

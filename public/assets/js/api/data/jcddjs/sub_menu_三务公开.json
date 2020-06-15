@@ -1,0 +1,26 @@
+{
+  "isAlert": false,
+  "resultData": {
+    "total": 3,
+    "data": [
+      {
+        "url": "http://127.0.0.1:8000/page/jcddjs/swgk/cwgk.html",
+        "name": "村务公开",
+        "icon": "icon-w_cunzhuang",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://127.0.0.1:8000/page/jcddjs/swgk/czgk.html",
+        "name": "财务公开",
+        "icon": "icon-caiwu",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://127.0.0.1:8000/page/jcddjs/swgk/dwgk.html",
+        "name": "党务公开",
+        "icon": "icon-dangwugongkai",
+        "target": "main_frame"
+      }
+    ]
+  }
+}

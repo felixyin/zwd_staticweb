@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>首页</title>	
+		<script type="text/javascript" src="js/common/jquery-3.2.1.min.js" ></script>
+		<script src="https://unpkg.com/swiper/js/swiper.js"> </script>  
+		<script src="https://unpkg.com/swiper/js/swiper.min.js"> </script>
+		<script type="text/javascript" src="../js/common/home.js" ></script>
+		<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">  
+		<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">   
+		<link rel="stylesheet" type="text/css" href="../国家政务服务平台_files/style.css"/>
+		<link type="text/css" href="../国家政务服务平台_files/styleIUser.css" rel="stylesheet"/>	
+	</head>
+	  <style>
+		.swiper-container {
+		    width: 100%;
+		    height: 600px;
+		    overflow-y: hidden;
+		} 
+		.swiper-slide img{
+			width:100%;
+		}
+		.swipertext{
+			width: 100%;
+            text-align: center;
+		    position: absolute;
+		    z-index: 999999999;
+		    top: 550px;
+		}
+	  </style>
+	<body>
+		<div class="swipertext">
+			  <div class="clearFix" id="noUser" >
+				<ul class="IUserNo">		
+					<li class="IUserNo_L2">
+						<a href="/fwmh/yhzx/front/index.do">
+							<i></i>
+							<span>统一入口</span>
+						</a>
+					</li>
+					<li class="IUserNo_L3">
+						<a href="/fwmh/yhzx/front/index.do">
+							<i></i>
+							<span>统一标准</span>
+						</a>
+					</li>				
+					<li class="IUserNo_L5">
+						<a href="/fwmh/item/fr_index.do">
+							<i></i>
+							<span>统一规范</span>
+						</a>
+					</li>
+					<li class="IUserNo_L4">
+						<a href="/fwmh/tytj/front/showBJTJView.do">
+							<i></i>
+							<span>统一流程</span>
+						</a>
+					</li>
+					<li class="IUserNo_L5">
+						<a href="/fwmh/yhzx/front/indexEval.do">
+							<i></i>
+							<span>统一方式</span>
+						</a>
+					</li>				
+				</ul>
+			  </div>
+			</div>
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide"><img src="../img/banner1.jpg"/></div>
+			        <div class="swiper-slide"><img src="../img/banner2.jpg"/></div>
+			        <div class="swiper-slide"><img src="../img/banner3.jpg"/></div>
+			        <!--<div class="swiper-slide"><img src="img/banner4.jpg"/></div>
+			        <div class="swiper-slide"><img src="img/banner5.jpg"/></div>
+			        <div class="swiper-slide"><img src="img/banner6.jpg"/></div>-->
+			    </div>
+			    <!-- 如果需要分页器 -->
+			    <div class="swiper-pagination"></div>
+			    
+			    <!-- 如果需要导航按钮 -->
+			    <div class="swiper-button-prev"></div>
+			    <div class="swiper-button-next"></div>
+			    
+			    <!-- 如果需要滚动条 -->
+			    <div class="swiper-scrollbar"></div>
+			</div>
+		<script>        
+			  var mySwiper = new Swiper ('.swiper-container', {
+			    autoplay: 2000,//可选选项，自动滑动
+			    loop: true, // 循环模式选项
+			    
+			    // 如果需要分页器
+			    pagination: {
+			      el: '.swiper-pagination',
+			    },
+			    
+			    // 如果需要前进后退按钮
+			    navigation: {
+			      nextEl: '.swiper-button-next',
+			      prevEl: '.swiper-button-prev',
+			    }
+			  })        
+		</script>	
+	</body>
+</html>

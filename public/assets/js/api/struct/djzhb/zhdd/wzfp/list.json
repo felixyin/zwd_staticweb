@@ -1,0 +1,17 @@
+{
+  "menu": {
+    "menu": "综合调度",
+    "menu2": "物资分配"
+  },
+  "schema": {
+    "id": 1,
+    "addr": "房屋地址",
+    "area": "面积",
+    "username": "承租人",
+    "yongtu": "用途",
+    "begintime": "承租日期",
+    "endtime": "到期日期",
+    "money": "租金",
+    "desc": "备注"
+  }
+}

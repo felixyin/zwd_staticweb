@@ -1,0 +1,26 @@
+{
+  "isAlert": false,
+  "resultData": {
+    "total": 42360,
+    "data": [
+      {
+        "url": "http://39.104.21.7:20312/res/page/partyGovernment/org_struct/StructureMag_list.html",
+        "name": "组织结构",
+        "icon": "icon-shequguanli",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://39.104.21.7:20312/res/page/partyGovernment/org_struct/PersonnelMag_list.html",
+        "name": "人事管理",
+        "icon": "icon-renshiguanli",
+        "target": "main_frame"
+      },
+	  {
+        "url": "http://39.104.21.7:20312/res/page/Grid/Grid_list.html",
+        "name": "网格管理",
+        "icon": "icon-wanggeguanli",
+        "target": "main_frame"
+      }
+    ]
+  }
+}

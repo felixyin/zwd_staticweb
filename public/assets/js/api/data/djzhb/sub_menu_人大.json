@@ -1,0 +1,32 @@
+{
+  "isAlert": false,
+  "resultData": {
+    "total": 4,
+    "data": [
+      {
+        "url": "http://127.0.0.1:8000/page/djzhb/rd/rddb.html",
+        "name": "人大代表",
+        "icon": "icon-daibiaofuwu",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://127.0.0.1:8000/page/djzhb/rd/sz.html",
+        "name": "述职",
+        "icon": "icon-ziyuan",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://127.0.0.1:8000/page/djzhb/rd/xjbm.html",
+        "name": "选举罢免",
+        "icon": "icon-icon-xuanjubiaojuex",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://127.0.0.1:8000/page/djzhb/rd/xxxc.html",
+        "name": "学习宣传",
+        "icon": "icon-xuexi",
+        "target": "main_frame"
+      }
+    ]
+  }
+}

@@ -1,0 +1,254 @@
+{
+  "id": "1847122",
+  "name": "内蒙昭乌达-党政-子菜单",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "414894",
+      "name": "更新",
+      "font_class": "update",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "451696",
+      "name": "维修",
+      "font_class": "icon",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "1089306",
+      "name": "文件",
+      "font_class": "buoumaotubiao25",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "1137788",
+      "name": "系统",
+      "font_class": "xitong",
+      "unicode": "e67c",
+      "unicode_decimal": 59004
+    },
+    {
+      "icon_id": "1228005",
+      "name": "会议",
+      "font_class": "meeting",
+      "unicode": "e648",
+      "unicode_decimal": 58952
+    },
+    {
+      "icon_id": "3521637",
+      "name": "人事管理",
+      "font_class": "renshiguanli",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "3677594",
+      "name": "查阅",
+      "font_class": "chayue",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "3787191",
+      "name": "学习",
+      "font_class": "xuexi",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "4630383",
+      "name": "地图展示",
+      "font_class": "dituzhanshi",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    },
+    {
+      "icon_id": "4779532",
+      "name": "公务用车",
+      "font_class": "gongwuyongche",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    },
+    {
+      "icon_id": "5422902",
+      "name": "办公耗材",
+      "font_class": "bangonghaocai",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "5652206",
+      "name": "操作",
+      "font_class": "caozuo",
+      "unicode": "e6a4",
+      "unicode_decimal": 59044
+    },
+    {
+      "icon_id": "5733674",
+      "name": "网格管理",
+      "font_class": "wanggeguanli",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "6193986",
+      "name": "街道管理",
+      "font_class": "jiedaoguanli",
+      "unicode": "e733",
+      "unicode_decimal": 59187
+    },
+    {
+      "icon_id": "7032114",
+      "name": "人员调度a",
+      "font_class": "renyuantiaodu1",
+      "unicode": "e794",
+      "unicode_decimal": 59284
+    },
+    {
+      "icon_id": "7565012",
+      "name": "社区管理",
+      "font_class": "shequguanli",
+      "unicode": "e665",
+      "unicode_decimal": 58981
+    },
+    {
+      "icon_id": "7700745",
+      "name": "党员档案",
+      "font_class": "dangyuandangan",
+      "unicode": "e777",
+      "unicode_decimal": 59255
+    },
+    {
+      "icon_id": "9009099",
+      "name": "述职报告",
+      "font_class": "ziyuan",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "9063977",
+      "name": "icon-选举表决@2x",
+      "font_class": "icon-xuanjubiaojuex",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "9334825",
+      "name": "指标分配",
+      "font_class": "fenpei",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    },
+    {
+      "icon_id": "9473943",
+      "name": "出租房屋",
+      "font_class": "chuzufangwu",
+      "unicode": "e64c",
+      "unicode_decimal": 58956
+    },
+    {
+      "icon_id": "10259782",
+      "name": "楼栋",
+      "font_class": "loudong",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "11330380",
+      "name": "数据展示",
+      "font_class": "shujuzhanshi",
+      "unicode": "e684",
+      "unicode_decimal": 59012
+    },
+    {
+      "icon_id": "11346613",
+      "name": "出租办公用房情况",
+      "font_class": "chuzubangongyongfangqingkuang",
+      "unicode": "e66d",
+      "unicode_decimal": 58989
+    },
+    {
+      "icon_id": "11843885",
+      "name": "办公设备",
+      "font_class": "bangongshebei",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "12070273",
+      "name": "小区",
+      "font_class": "xiaoqu",
+      "unicode": "e749",
+      "unicode_decimal": 59209
+    },
+    {
+      "icon_id": "12127353",
+      "name": "9省政府发文库",
+      "font_class": "shengzhengfufawenku",
+      "unicode": "e76f",
+      "unicode_decimal": 59247
+    },
+    {
+      "icon_id": "12127356",
+      "name": "10省政府收文库",
+      "font_class": "shengzhengfushouwenku",
+      "unicode": "e770",
+      "unicode_decimal": 59248
+    },
+    {
+      "icon_id": "12279971",
+      "name": "党委发文",
+      "font_class": "dangweifawen",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "12280211",
+      "name": "党委收文",
+      "font_class": "dangweishouwen",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "12731295",
+      "name": "代表服务",
+      "font_class": "daibiaofuwu",
+      "unicode": "e815",
+      "unicode_decimal": 59413
+    },
+    {
+      "icon_id": "12767078",
+      "name": "我的模块-加油",
+      "font_class": "jiayou",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "13175190",
+      "name": "单元",
+      "font_class": "danyuan",
+      "unicode": "e729",
+      "unicode_decimal": 59177
+    },
+    {
+      "icon_id": "13344911",
+      "name": "房间",
+      "font_class": "fangjian",
+      "unicode": "e686",
+      "unicode_decimal": 59014
+    },
+    {
+      "icon_id": "13755994",
+      "name": "领用",
+      "font_class": "tuoguan",
+      "unicode": "e643",
+      "unicode_decimal": 58947
+    }
+  ]
+}

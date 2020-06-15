@@ -1,0 +1,186 @@
+html, body {
+    height: 100% !important;
+}
+
+body {
+    color: #fff;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    background: url(/assets/img/djzhb/login/bg.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+.logoclass {
+    width: 170px;
+    display: inline-block;
+    margin-top: 40px;
+    margin-left: 120px;
+    float: left;
+}
+
+.sys_name {
+    display: inline-block;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 10px;
+    margin-right: 220px;
+    /* opacity: 0.9; */
+    font-size: 38px;
+    /* position: absolute; */
+    /* margin: 0px auto; */
+    margin-top: 80px;
+}
+
+.contersub {
+    width: 434px;
+    border: 0px;
+    position: absolute;
+    right: 15%;
+    top: 28%;
+    box-shadow: #0b97e0 10px 10px 30px 5px;
+}
+
+.main_content {
+    /*background:url(../images/main_bg.png) repeat;*/
+    background: #f1f0f0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    float: none;
+    border-radius: 8px;
+    height: 447px;
+    overflow: hidden;
+    padding: 0px !important;
+}
+
+.login_btn {
+    margin: 5px auto 30px auto;
+    display: block;
+    /*  background: #3872f6; */
+    background: url(/assets/img/djzhb/login/jianbian.jpg) repeat-x;
+    color: #fff;
+    font-size: 18px;
+    width: 314px;
+    line-height: 60px;
+    border-radius: 3px;
+    border: none;
+    text-align: center;
+    height: 60px;
+}
+
+.login_input {
+    color: #000;
+    width: 100%;
+    /* border:1px solid #3872f6;  */
+    border-radius: 3px;
+    line-height: 40px;
+    padding: 0px 0px 0px 35px;
+    background: none;
+}
+
+.icon_font {
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    font-size: 18px;
+    color: #3872f6;
+}
+
+.layiput {
+    width: 90%;
+    margin: 0px auto;
+}
+
+.iconstyle {
+    font-size: 18px;
+    color: #1E9FFF;
+    position: absolute;
+    margin: 10px 5px 3px 6px;
+}
+
+.font16 {
+    font-size: 16px;
+    margin: 40px 0px 20px 0px;
+}
+
+.mg-b20 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.text-center {
+    text-align: center;
+    color: #000;
+}
+
+#conterdiv {
+    height: 200px;
+    overflow: hidden
+}
+
+.Tipsdownload {
+    text-align: center;
+    color: #36A0DA;
+    cursor: pointer;
+}
+
+.explain {
+    text-align: center;
+    color: #ABB1BD;
+    cursor: pointer;
+}
+
+#footerhtml {
+    position: fixed;
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+    bottom: 20px;
+}
+
+#contertab {
+    width: 314px;
+    margin: 50px auto 5px auto;
+}
+
+#tabname li {
+    width: 50%;
+    padding: 0 0px !important;
+    font-size: 20px;
+}
+
+.layui-tab-brief > .layui-tab-title .layui-this {
+    color: #40a5fa !important;
+}
+
+.layui-tab-brief > .layui-tab-title li {
+    color: #555;
+}
+
+.layui-tab-brief > .layui-tab-more li.layui-this:after, .layui-tab-brief > .layui-tab-title .layui-this:after {
+    border-bottom: 2px solid #3c95f8 !important;
+}
+
+#login_form {
+    margin-top: 20px;
+}
+
+.layui-input {
+    border: 0px;
+}
+
+.layui-form-checked[lay-skin=primary] i {
+    border-color: #46bffe !important;
+    background-color: #46bffe !important;
+}
+
+.resultmsg {
+    text-align: center;
+    color: red
+}
+
+.QRcode {
+    width: 260px;
+    height: 260px;
+}
+	

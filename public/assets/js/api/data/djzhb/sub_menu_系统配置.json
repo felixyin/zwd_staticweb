@@ -1,0 +1,26 @@
+{
+  "isAlert": false,
+  "resultData": {
+    "total": 42360,
+    "data": [
+      {
+        "url": "http://39.104.21.7:20312/res/page/user/permission_list.html",
+        "name": "权限管理",
+        "icon": "icon-xitong",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://39.104.21.7:20312/res/page/dictionary/nation_list.html",
+        "name": "民族管理",
+        "icon": "icon-xitong",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://39.104.21.7:20312/res/page/dictionary/nationality_list.html",
+        "name": "国籍管理",
+        "icon": "icon-xitong",
+        "target": "main_frame"
+      }
+    ]
+  }
+}

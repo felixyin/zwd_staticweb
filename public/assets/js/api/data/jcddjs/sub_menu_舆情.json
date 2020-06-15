@@ -1,0 +1,20 @@
+{
+  "isAlert": false,
+  "resultData": {
+    "total": 2,
+    "data": [
+      {
+        "url": "http://127.0.0.1:8000/page/jcddjs/yq/hf.html",
+        "name": "回复",
+        "icon": "icon-icon_reply",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://127.0.0.1:8000/page/jcddjs/yq/py.html",
+        "name": "辟谣",
+        "icon": "icon-yaoyan",
+        "target": "main_frame"
+      }
+    ]
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "isAlert": false,
+  "resultData": {
+    "total": 42360,
+    "data": [
+      {
+        "id": 1,
+        "url": "javascript:;",
+        "name": "党建大数据",
+        "target": "main_frame",
+        "icon": "icon-dashujuzhenghe"
+      },
+      {
+        "id": 1,
+        "url": "javascript:;",
+        "name": "智慧党建",
+        "target": "main_frame",
+        "icon": "icon-Party-construction"
+      },
+      {
+        "id": 1,
+        "url": "javascript:;",
+        "name": "党建网格",
+        "target": "main_frame",
+        "icon": "icon-wanggekai"
+      },
+      {
+        "id": 1,
+        "url": "javascript:;",
+        "name": "团委",
+        "target": "main_frame",
+        "icon": "icon-shequ"
+      },
+      {
+        "id": 1,
+        "url": "javascript:;",
+        "name": "工会关工委",
+        "target": "main_frame",
+        "icon": "icon-gonghui"
+      },
+      {
+        "id": 1,
+        "url": "javascript:;",
+        "name": "红十字会",
+        "target": "main_frame",
+        "icon": "icon-hongshizi_yiliao"
+      },
+      {
+        "id": 1,
+        "url": "javascript:;",
+        "name": "三务公开",
+        "target": "main_frame",
+        "icon": "icon-gongkai"
+      },
+      {
+        "id": 1,
+        "url": "javascript:;",
+        "name": "信息发布",
+        "target": "main_frame",
+        "icon": "icon-fabu"
+      },
+      {
+        "id": 1,
+        "url": "javascript:;",
+        "name": "舆情",
+        "target": "main_frame",
+        "icon": "icon-yaoyan"
+      },
+      {
+        "id": 1,
+        "url": "javascript:;",
+        "name": "宗教",
+        "target": "main_frame",
+        "icon": "icon-zongjiao"
+      },
+      {
+        "id": 1,
+        "url": "javascript:;",
+        "name": "思政文体",
+        "target": "main_frame",
+        "icon": "icon-wentijiaoyu"
+      },
+      {
+        "id": 1,
+        "url": "javascript:;",
+        "name": "党风廉政",
+        "target": "main_frame",
+        "icon": "icon-lianzhengjubao"
+      }
+    ]
+  }
+}

@@ -1,0 +1,183 @@
+/*附件列表样式*/
+.attachment {
+}
+.attachment li a {
+	margin-right: 5px;
+}
+.icon_operation{
+	color: #ff5722;
+    font-size: 20px;
+}
+.from_but{
+	width: 100%;
+	margin: 30px auto 10px auto;
+	text-align: center;
+}
+#form_edit{
+	margin-top:10px;
+}
+.graphbox{
+	width: 30%;
+    float: left;
+    border: 1px solid #e6e6e6;
+    margin-right: 5px;
+	margin-bottom:5px;
+    height: 280px;
+}
+.mr_8{
+	margin-right: 8px;
+}
+.graphbox_big{
+	width: 100%;
+	/*float: left;*/
+	border: 1px solid #e6e6e6;
+	margin-right: 5px;
+	margin-bottom:5px;
+	height: 540px;
+}
+
+.span-inline{
+	margin-right:10px;
+	float: left;
+	width:10px;
+	display: inline-block;
+    vertical-align: middle;
+}
+.layui-date{
+	position: absolute;
+	right: 5px;
+	top: 50%;
+	margin-top: -12px;
+	cursor: pointer;
+	font-size: 25px;
+	color: #1E9FFF;
+}
+.searchbut{
+	width:100%;
+	/* overflow:hidden; */
+	min-width: 900px;
+}
+.butsure{
+	width:10%;
+	max-width:100px;
+	float: left;
+	
+}
+/* #condition_class{
+  width: 85%;
+  float: left;
+} */
+#condition_class{
+  width: 100%;
+ 
+}
+#condition_class .layui-input-inline{
+   margin-bottom:5px;
+}
+#searchbutton{
+	width:150px;
+}
+.navtable{
+	width:48%;
+	height:100%;
+	float: left;
+}
+.chrildnavtable{
+	width:48%;
+	height:100%;
+	float: right;
+}
+.ptitlename{
+  height: 35px;
+  line-height: 35px;
+  background: #eee;
+  padding-left: 20px;
+/*  color: #1E9FFF;*/
+  font-weight: bold;
+  font-size: 14px;
+}
+.swithbtn{
+	width: 52px;
+	text-align: center;
+	height: 28px;
+	line-height: 28px;
+	border-radius: 14px;
+	box-shadow: 0 1px 2px rgba(0,0,0,.1) inset;
+	}
+.swithbtnNO{
+	background: #DFDFDF;
+	color: #afadad;
+	}
+.swithbtnSure{
+	background: #5FB878;
+	color: #fff;
+	}
+.table-c table{
+	border-right:1px solid #aed0ea;
+	border-bottom:1px solid #aed0ea
+}
+.table-c table td{
+	border-left:1px solid #aed0ea;
+	border-top:1px solid #aed0ea;
+	    padding: 5px 5px;
+}
+.tbfontcolor{
+color: #1E9FFF;
+}
+.layui-input-item{
+   margin-left: 20px;
+   min-height: 36px;
+}
+.treedata{
+  height: 270px;
+  overflow-y: auto;
+}
+.inputreadonly{
+	color: #A39F9F;
+}
+.lookurladdress{
+	text-decoration: none;
+    color: #19C1F2;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+}
+.TitleSpan{
+    display: inline-block;
+    float: right;
+    margin-right: 20px;
+    color: #f3143b;
+}
+#form_edit ,#form_check{
+	margin-top:20px
+}
+.checkgroup{
+	margin-top:30px;
+	text-align: center;
+}
+.BTNSHOW{ /*  控制功能按钮权限 */
+	 /*display:none;*/
+}
+.layui-layer-msg{
+	display: none;
+}
+
+.layui-table {
+	width: 100% !important;
+}
+
+/* 加载的表格样式---提高优先级 */
+.layui-form-label {
+	width: 100px
+}
+
+.iconselectClass {
+	overflow-y: auto;
+	height: 270px;
+	background: #f0f6e4;
+	border: 1px solid #617775;
+}
+.layui-quote-nm{
+	margin-bottom: 0!important;
+	padding-bottom: 0!important;
+}

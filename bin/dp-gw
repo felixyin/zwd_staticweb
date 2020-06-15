@@ -1,0 +1,40 @@
+#!/usr/bin/env sh
+
+# TODO 替换此目录为项目绝对路径
+cd /Users/yinbin/workspace/staticweb
+
+git add .
+git commit -m 'ok'
+git push
+
+ti1=$(date +%s)    #获取时间戳
+ti2=$(date +%s)
+i=$(($ti2 - $ti1 ))
+
+while [[ "$i" -ne "2" ]]
+do
+        ti2=`date +%s`
+        i=$(($ti2 - $ti1 ))
+done
+
+
+# ""号内为在服务器执行的脚本，请自己修改，支持linux服务器
+#              到服务器的项目目录；                    更新覆盖代码；                                       替换host为服务器ip；                                                                       安装依赖库；  杀掉之前进程；               开启进程不写入日志
+ssh root@bak "cd /root/staticweb;git fetch --all && git reset --hard origin/master && git pull; grep 127.0.0.1:8000 -rl /root/staticweb/ | xargs sed -i 's#127.0.0.1:8000#49.232.53.220:8000#g'; npm i; killall supervisor; nohup supervisor bin/www >/dev/null 2>&1 &"
+
+
+ti1=$(date +%s)    #获取时间戳
+ti2=$(date +%s)
+i=$(($ti2 - $ti1 ))
+
+while [[ "$i" -ne "3" ]]
+do
+	ti2=`date +%s`
+	i=$(($ti2 - $ti1 ))
+done
+
+echo '大约3秒后热部署完毕，并自动打开浏览器'
+# TODO 改为windows命令或者去掉
+/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome http://49.232.53.220:8000/
+exit
+exit

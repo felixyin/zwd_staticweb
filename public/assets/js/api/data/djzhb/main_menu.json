@@ -1,0 +1,100 @@
+{
+  "isAlert": false,
+  "resultData": {
+    "total": 42360,
+    "data": [
+      {
+        "id": 1,
+        "url": "javascript:;",
+        "name": "数据中心",
+        "target": "_self",
+        "icon": "/assets/img/djzhb/menu/sjzx.png",
+        "active": true
+      },
+      {
+        "id": 2,
+        "url": "javascript:;",
+        "name": "组织架构",
+        "target": "_self",
+        "icon": "/assets/img/djzhb/menu/zzjg.png"
+      },
+      {
+        "id": 3,
+        "url": "javascript:;",
+        "name": "居民信息",
+        "target": "_self",
+        "icon": "/assets/img/djzhb/menu/jmfw.png"
+      },
+      {
+        "id": 4,
+        "url": "javascript:;",
+        "name": "系统用户",
+        "target": "_self",
+        "icon": "/assets/img/djzhb/menu/xtyh.png"
+      },
+      {
+        "id": 5,
+        "url": "javascript:;",
+        "name": "日志管理",
+        "target": "_self",
+        "icon": "/assets/img/djzhb/menu/rzgl.png"
+      },
+      {
+        "id": 6,
+        "url": "http://127.0.0.1:8000/page/DevelopPeople/Develop_Index.html",
+        "name": "系统配置",
+        "target": "_self",
+        "icon": "/assets/img/djzhb/menu/xtpz.png"
+      },
+      {
+        "id": 7,
+        "url": "javascript:;",
+        "name": "人大",
+        "target": "_self",
+        "icon": "/assets/img/djzhb/menu/rd.png"
+      },
+      {
+        "id": 8,
+        "url": "javascript:;",
+        "name": "后勤保障",
+        "target": "_self",
+        "icon": "/assets/img/djzhb/menu/hqbz.png"
+      },
+      {
+        "id": 9,
+        "url": "javascript:;",
+        "name": "收发文",
+        "target": "_self",
+        "icon": "/assets/img/djzhb/menu/sfw.png"
+      },
+      {
+        "id": 10,
+        "url": "javascript:;",
+        "name": "办公用房",
+        "target": "_self",
+        "icon": "/assets/img/djzhb/menu/bgyf.png"
+      },
+      {
+        "id": 11,
+        "url": "javascript:;",
+        "name": "综合调度",
+        "target": "_self",
+        "icon": "/assets/img/djzhb/menu/zhdd.png"
+      },
+      {
+        "id": 12,
+        "url": "javascript:;",
+        "name": "固定资产",
+        "target": "_self",
+        "icon": "/assets/img/djzhb/menu/gdzc.png"
+      },
+      {
+        "id": 13,
+        "url": "javascript:;",
+        "name": "档案管理",
+        "target": "_self",
+        "icon": "/assets/img/djzhb/menu/dagl.png"
+      }
+    ]
+  }
+}

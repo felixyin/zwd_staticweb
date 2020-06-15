@@ -1,0 +1,54 @@
+{
+  "isAlert": false,
+  "status": 200,
+  "resultData": {
+    "total": 2,
+    "totalPage": 10,
+    "hint": "",
+    "limit": 1,
+    "page": 1,
+    "status": 200,
+    "data": [
+      {
+        "id": "0",
+        "name": "姚家乐",
+        "lxfs": "150****5656",
+        "ssxq": "北京朝阳",
+        "sqdnhm": "802355864",
+        "xb": "男",
+        "csrq": "1993年5月3日",
+        "cjgzsj": "2016年7月",
+        "rdsj": "2017年8月6日",
+        "gzdwjzw": "民望社区",
+        "dwdv": "民望社区",
+        "sfwjdb": "是",
+        "jtzv": "南外环120号",
+        "gzjl": "民望社区小组成员",
+        "dbszqk": "",
+        "dbszap": "",
+        "dblvqk": "",
+        "pjmyd": ""
+      },
+      {
+        "id": "1",
+        "name": "姓名1",
+        "lxfs": "联系方式1",
+        "ssxq": "所属选区1",
+        "sqdnhm": "社区电话号码1",
+        "xb": "性别1",
+        "csrq": "出生日期1",
+        "cjgzsj": "参加工作时间1",
+        "rdsj": "入党时间1",
+        "gzdwjzw": "工作单位及职务1",
+        "dwdv": "单位地址1",
+        "sfwjdb": "是否往届代表1",
+        "jtzv": "家庭住址1",
+        "gzjl": "工作简历1",
+        "dbszqk": "代表述职情况附件1",
+        "dbszap": "代表述职安排附件1",
+        "dblvqk": "代表履职情况附件1",
+        "pjmyd": "满意度评测表附件1"
+      }
+    ]
+  }
+}

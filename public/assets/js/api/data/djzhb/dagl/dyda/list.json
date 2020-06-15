@@ -1,0 +1,34 @@
+{
+  "isAlert": false,
+  "status": 200,
+  "resultData": {
+    "total": 2,
+    "totalPage": 10,
+    "hint": "",
+    "limit": 1,
+    "page": 1,
+    "status": 200,
+    "data": [
+      {
+        "id": "0",
+        "branch": "民心社区党支部",
+        "username": "李明",
+        "idcard": "150****5563",
+        "pic": "",
+        "type": "在职党员",
+        "viwu": "组长",
+        "files": ""
+      },
+      {
+        "id": "1",
+        "branch": "伊利社区党支部",
+        "username": "张华",
+        "idcard": "150****2253",
+        "pic": "",
+        "type": "在职党员",
+        "viwu": "组长",
+        "files": ""
+      }
+    ]
+  }
+}

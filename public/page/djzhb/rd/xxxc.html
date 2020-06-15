@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>学习宣传</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/assets/lib/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="/assets/lib/viewer/viewer.min.css"/>
+    <link rel="stylesheet" href="/assets/css/common/style.css" media="all">
+    <link rel="stylesheet" href="/assets/css/djzhb/rd/xxxc/list.css" media="all">
+    
+    
+    <style type="text/css">
+        .layui-laypage .layui-laypage-curr .layui-laypage-em{
+            background-color: lightskyblue!important;
+        }
+        .layui-btn-danger {
+            background-color: lightblue!important;
+        }
+    </style>
+    
+
+</head>
+<body>
+<div class="layui-fluid" style="padding-top:10px;">
+	<span class="layui-breadcrumb">
+	  <a><cite>首页</cite></a>
+	  <a><cite>学习宣传</cite></a>
+	</span>
+    <!-- 右上角按钮 -->
+        <div style="float:right;">
+            <button class="layui-btn layui-btn-sm layui-btn-normal"  onclick="addDataFunc()">
+                <i class="layui-icon">&#xe654;</i>
+                添加
+            </button>
+        </div>
+
+    <div class="layui-clear"></div>
+
+    <blockquote class="layui-elem-quote layui-quote-nm " style="margin-top:1px;">
+        <form class="layui-form BTNSHOW BTNSHOW_QUERY" action="javascript:;" id="query_condition">
+            <div class="layui-form-item" style="margin-bottom:0;">
+                <div class="layui-inline" style="width:100%">
+                    <div class="searchbut">
+                        <!-- <div class="butsure">
+                                <label class="layui-form-label">查询条件：</label>
+                             </div> -->
+                        <div id="condition_class" class="layui-inline">
+                            
+                            <div class="layui-input-inline">
+                                <input type="text" name="name" id="name-id" defaultmsg="代表姓名"
+                                       placeholder="代表姓名" lay-filter='name' class="layui-input"
+                                       condition=""/>
+                            </div>
+                            
+                            <div class="layui-input-inline">
+                                <input type="text" name="hddd" id="hddd-id" defaultmsg="活动地点"
+                                       placeholder="活动地点" lay-filter='hddd' class="layui-input"
+                                       condition=""/>
+                            </div>
+                            
+                            <div class="layui-input-inline">
+                                <input type="text" name="hdsj" id="hdsj-id" defaultmsg="活动时间"
+                                       placeholder="活动时间" lay-filter='hdsj' class="layui-input"
+                                       condition=""/>
+                            </div>
+                            
+                            <div class="layui-input-inline">
+                                <input type="text" name="hdzt" id="hdzt-id" defaultmsg="活动主题"
+                                       placeholder="活动主题" lay-filter='hdzt' class="layui-input"
+                                       condition=""/>
+                            </div>
+                            
+                            <div class="layui-input-inline">
+                                <input type="text" name="hdrs" id="hdrs-id" defaultmsg="活动人数"
+                                       placeholder="活动人数" lay-filter='hdrs' class="layui-input"
+                                       condition=""/>
+                            </div>
+                            
+                            <div class="layui-input-inline">
+                                <input type="text" name="hdxs" id="hdxs-id" defaultmsg="活动形式"
+                                       placeholder="活动形式" lay-filter='hdxs' class="layui-input"
+                                       condition=""/>
+                            </div>
+                            
+                            <div class="layui-input-inline">
+                                <input type="text" name="hdnr" id="hdnr-id" defaultmsg="活动内容"
+                                       placeholder="活动内容" lay-filter='hdnr' class="layui-input"
+                                       condition=""/>
+                            </div>
+                            
+                            <div class="layui-input-inline">
+                                <input type="text" name="type" id="type-id" defaultmsg="类型"
+                                       placeholder="类型" lay-filter='type' class="layui-input"
+                                       condition=""/>
+                            </div>
+                            
+                            <div class="layui-input-inline">
+                                <input type="text" name="hdkqb" id="hdkqb-id" defaultmsg="活动考勤表附件"
+                                       placeholder="活动考勤表附件" lay-filter='hdkqb' class="layui-input"
+                                       condition=""/>
+                            </div>
+                            
+                            <div class="layui-input-inline">
+                                <input type="text" name="bssdjb" id="bssdjb-id" defaultmsg="办实事登记表附件"
+                                       placeholder="办实事登记表附件" lay-filter='bssdjb' class="layui-input"
+                                       condition=""/>
+                            </div>
+                            
+                            <div class="layui-input-inline" id="searchbutton">
+                                <button class="layui-btn layui-btn-normal" lay-submit lay-filter="queryData">
+                                    <i class="layui-icon ">&#xe615</i>
+                                </button>
+                                <button class="layui-btn layui-btn-normal" id="Reload">
+                                    <i title="刷新" class="layui-icon ">&#xe669</i>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </blockquote>
+
+    <!--主题表格数据开始-->
+    <table id="tabledata" lay-filter="test"></table>
+
+    <div class="layui-tab-item">
+        <div id="pageDemo"></div>
+    </div>
+</div>
+
+<!--编辑表格弹出层开始-->
+<form id="form_edit" class="layui-form" style=" display:none;margin-top:30px;" action="">
+    <input type="hidden" id="id" name="id" autocomplete="off" class="layui-input">
+    
+    <div class="layui-form-item">
+        
+            <label class="layui-form-label">代表姓名</label>
+            <div class="layui-input-inline">
+                <input type="text" name="name" id="name_edit"
+                       class="layui-input"  placeholder="代表姓名"/>
+            </div>
+        
+        
+            <label class="layui-form-label">
+<!--                <span style="color:red;">*</span>-->
+                活动地点</label>
+            <div class="layui-input-inline">
+                <input type="text" name="hddd" id="hddd_edit"
+                       class="layui-input"  placeholder="活动地点"/>
+            </div>
+        
+    </div>
+    
+    <div class="layui-form-item">
+        
+            <label class="layui-form-label">活动时间</label>
+            <div class="layui-input-inline">
+                <input type="text" name="hdsj" id="hdsj_edit"
+                       class="layui-input"  placeholder="活动时间"/>
+            </div>
+        
+        
+            <label class="layui-form-label">
+<!--                <span style="color:red;">*</span>-->
+                活动主题</label>
+            <div class="layui-input-inline">
+                <input type="text" name="hdzt" id="hdzt_edit"
+                       class="layui-input"  placeholder="活动主题"/>
+            </div>
+        
+    </div>
+    
+    <div class="layui-form-item">
+        
+            <label class="layui-form-label">活动人数</label>
+            <div class="layui-input-inline">
+                <input type="text" name="hdrs" id="hdrs_edit"
+                       class="layui-input"  placeholder="活动人数"/>
+            </div>
+        
+        
+            <label class="layui-form-label">
+<!--                <span style="color:red;">*</span>-->
+                活动形式</label>
+            <div class="layui-input-inline">
+                <input type="text" name="hdxs" id="hdxs_edit"
+                       class="layui-input"  placeholder="活动形式"/>
+            </div>
+        
+    </div>
+    
+    <div class="layui-form-item">
+        
+            <label class="layui-form-label">活动内容</label>
+            <div class="layui-input-inline">
+                <input type="text" name="hdnr" id="hdnr_edit"
+                       class="layui-input"  placeholder="活动内容"/>
+            </div>
+        
+        
+            <label class="layui-form-label">
+<!--                <span style="color:red;">*</span>-->
+                类型</label>
+            <div class="layui-input-inline">
+                <input type="text" name="type" id="type_edit"
+                       class="layui-input"  placeholder="类型"/>
+            </div>
+        
+    </div>
+    
+    <div class="layui-form-item">
+        
+            <label class="layui-form-label">活动考勤表附件</label>
+            <div class="layui-input-inline">
+                <input type="text" name="hdkqb" id="hdkqb_edit"
+                       class="layui-input"  placeholder="活动考勤表附件"/>
+            </div>
+        
+        
+            <label class="layui-form-label">
+<!--                <span style="color:red;">*</span>-->
+                办实事登记表附件</label>
+            <div class="layui-input-inline">
+                <input type="text" name="bssdjb" id="bssdjb_edit"
+                       class="layui-input"  placeholder="办实事登记表附件"/>
+            </div>
+        
+    </div>
+    
+
+    <div class="layui-form-item" id="bntgroup">
+        <div class="from_but">
+            <button class="layui-btn layui-btn-normal" id="queryCondBtn" lay-submit lay-filter="editInfo">提交</button>
+        </div>
+    </div>
+</form>
+
+
+<script src="/assets/lib/jquery/jquery-3.2.1.min.js"></script>
+<script src="/assets/js/app.js"></script>
+<script src="/assets/js/common/range.js"></script>
+<script src="/assets/lib/viewer/viewer.min.js"></script>
+<script src="/assets/js/common/validate.js"></script>
+<script src="/assets/lib/layui/layui.all.js"></script>
+<script src="/assets/js/djzhb/rd/xxxc/list.js"></script>
+</body>
+</html>

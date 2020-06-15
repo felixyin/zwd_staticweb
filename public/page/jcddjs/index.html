@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>党政综合办</title>
+    <meta name="keywords" content="智慧党建网络">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/lib/layui/css/layui.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/css/common/theme/red.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/img/jcddjs/menu/iconfont.css">
+</head>
+<body>
+<div id="_main_container_">
+    <!-- top -->
+    <div class="layui-header zhdj_top">
+        <div class="layui-logo zhdj_logo">
+            <img src="/assets/img/djzhb/logo.png" alt="">
+            <span>基层党建办公室</span>
+            <a href="/page/main.html" class="callback">
+                <img src="/assets/img/common/callback.png" alt="">
+                <span>返回</span>
+            </a>
+        </div>
+        <div class="layui-nav zhdj_second_menu">
+            <script type="text/html" id="main-menu-tpl">
+                {{#  layui.each(d.data, function(index, item){ }}
+                {{# if(item.target == '_blank'){ }}
+                <li class="layui-col-md1 layui-this">
+                    <a href="{{item.url}}" target="_blank" onclick="mainMenuClick('{{item.name}}')">
+                        <span class="iconfont {{item.icon}}"></span>
+                        <span>{{item.name}}</span>
+                    </a>
+                </li>
+                {{#  } else { }}
+                <li class="layui-col-md1">
+                    <a href="javascript:void(0)" onclick="mainMenuClick('{{item.name}}')">
+                        <span class="iconfont {{item.icon}}"></span>
+                        <span>{{item.name}}</span>
+                    </a>
+                </li>
+                {{#  } }}
+                {{#  }); }}
+            </script>
+            <ul class="layui-row" id="main-menu">
+
+            </ul>
+        </div>
+        <div class="zhdi_drop_icon">
+            <img src="/assets/img/jcddjs/index/top.png" alt="" class="top_btn" style="display: none">
+            <img src="/assets/img/jcddjs/index/bottom.png" alt="" class="bottom_btn" style="display: inline-block;">
+        </div>
+    </div>
+    <!-- nav -->
+    <div class="layui-side zhdj_menu">
+        <script type="text/html" id="sub-menu-tpl">
+            {{#  layui.each(d.data, function(index, item){ }}
+            {{# if(item.target == '_blank'){ }}
+            <li class="layui-nav-item">
+                <a href="{{item.url}}" _href="{{item.url}}" target="_blank">
+                    <span class="iconfont-sub {{item.icon}}"></span>
+                    <cite>{{item.name}}</cite>
+                </a>
+            </li>
+            {{#  } else { }}
+            <li class="layui-nav-item">
+                <a _href="{{item.url}}">
+                    <span class="iconfont-sub {{item.icon}}"></span>
+                    <cite>{{item.name}}</cite>
+                </a>
+            </li>
+            {{#  } }}
+            {{#  }); }}
+        </script>
+        <ul class="layui-nav layui-nav-tree" id="nav">
+        </ul>
+        <div class="zhdj_open_close">
+            <img src="/assets/img/jcddjs/index/left.png" alt="" class="left_icon" style="display: inline-block;">
+            <img src="/assets/img/jcddjs/index/right.png" alt="" class="right_icon" style="display: none;">
+        </div>
+    </div>
+
+    <!-- content -->
+    <div class="layui-body zhdj_content">
+        <div class="layui-icon layui-icon-prev" id="left_button"></div>
+        <div class="layui-icon layui-icon-next" id="right_button"></div>
+        <div class="layui-tab tab" lay-filter="mainTab" lay-allowclose="false">
+            <ul class="layui-tab-title zhdj_tab">
+                <li>主页</li>
+            </ul>
+            <div class="layui-tab-content zhdj_form">
+                <div class="layui-tab-item layui-show" style="height: 100%;">
+                    <iframe src='./home.html' frameborder="0" scrolling="no" class="x-iframe"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="/assets/lib/jquery/jquery-3.2.1.min.js"></script>
+
+<script type="text/javascript" src="/assets/lib/layui/layui.all.js"></script>
+<script type="text/javascript" src="/assets/js/api/api.js"></script>
+<script type="text/javascript" src="/assets/js/jcddjs/menu.js"></script>
+<script type="text/javascript" src="/assets/lib/jquery/jquery.cookie.js"></script>
+<script type="text/javascript" src="/assets/js/jcddjs/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+{
+  "isAlert": false,
+  "resultData": {
+    "total": 4,
+    "data": [
+      {
+        "url": "http://127.0.0.1:8000/page/jcddjs/xxfb/gzdt.html",
+        "name": "工作动态",
+        "icon": "icon-shenghuohuijiminzhupingyigongzuo",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://127.0.0.1:8000/page/jcddjs/xxfb/wpgz.html",
+        "name": "网评工作",
+        "icon": "icon-pinglun",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://127.0.0.1:8000/page/jcddjs/xxfb/zfwx.html",
+        "name": "转发网宣",
+        "icon": "icon-zhuanfa",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://127.0.0.1:8000/page/jcddjs/xxfb/zwxmt.html",
+        "name": "政务新媒体",
+        "icon": "icon-meitiwenjian",
+        "target": "main_frame"
+      }
+    ]
+  }
+}

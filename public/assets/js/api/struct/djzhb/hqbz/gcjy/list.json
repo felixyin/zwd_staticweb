@@ -1,0 +1,17 @@
+{
+  "menu": {
+    "menu": "后勤保障",
+    "menu2": "公车加油"
+  },
+  "schema": {
+    "id": 1,
+    "car_id": "车id",
+    "card_no": "卡号",
+    "username": "负责人",
+    "pre_li": "上次加油里程数",
+    "curr_li": "当前里程数",
+    "fee": "费用",
+    "dtime": "加油时间",
+    "desc": "备注"
+  }
+}

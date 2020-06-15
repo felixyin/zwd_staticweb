@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8"></meta>
+    <meta name="renderer" content="webkit"></meta>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"></meta>
+    <link rel="stylesheet" href="/assets/lib/layui/css/layui.css" media="all"/>
+    <link rel="stylesheet" href="/assets/css/djzhb/login.css" media="all"/>
+    <script>
+        if (window != top)
+            top.location.href = location.href;
+    </script>
+</head>
+<body>
+<div style="width:100%;text-align: center;" id="_main_container_">
+<!--    <img class="logoclass" src="/assets/img/common/login-logo.jpg"/>-->
+    <img class="logoclass" src="/assets/img/djzhb/login/logo2.png"/>
+    <h1 class="sys_name" id="sys_name"></h1>
+    <div class="contersub">
+        <div class="layui-field-box center-auto  main_content">
+            <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief" id="contertab">
+                <ul class="layui-tab-title" id="tabname">
+                    <li class="layui-this">账号登录</li>
+                    <li>安全登录</li>
+                </ul>
+                <div class="layui-tab-content" style="padding:10px 0px">
+                    <div class="layui-tab-item layui-show">
+                        <form class="layui-form" id="login_form">
+                            <div class="layui-form-item">
+                                <div class="layiput">
+                                    <i class="layui-icon iconstyle">&#xe66f;</i>
+                                    <input type="text" id="userName" name="userName" required="true"
+                                           lay-verify="userName" placeholder="请输入用户名" autocomplete="off"
+                                           class="layui-input login_input" value="贵望电子2020"/>
+                                </div>
+                            </div>
+                            <div class="layui-form-item" style="margin-top:30px">
+                                <div class="layiput">
+                                    <i class="layui-icon iconstyle">&#xe673;</i>
+                                    <input type="password" id="pwd" name="pwd" required="true" lay-verify="pwd"
+                                           placeholder="请输入密码" autocomplete="off" class="layui-input login_input" value="vSNSa1LM4SrJlm7j"/>
+                                </div>
+                            </div>
+                            <div class="layui-form-item" style="margin:20px 0px 35px 0px">
+                                <input type="checkbox" id="RememberPwd" name="RememberPwd" title="记住密码"
+                                       lay-skin="primary" class="layui-input" checked="true"/>
+                            </div>
+                            <div class="resultmsg" style="display:none">
+                                <span class="msg"></span>
+                            </div>
+                            <div class="layui-form-item">
+                                <button class="login_btn" id="dl" lay-submit="" lay-filter="formDemo">登&nbsp;&nbsp;录</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="layui-tab-item" style="text-align:center">
+                        <img alt="" src="/res/images/QRcode.png" class="QRcode"/>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--<iframe id="hide_frame" name="hide_frame" style="width: 0;" src="http://39.104.21.7:20312/login.html"></iframe>-->
+<div id="footerhtml">
+    <span>技术支持：13651189367</span>
+    <span style="margin-left:70px">版权所有©昭乌达南路街道办事处</span>
+</div>
+<script src="/assets/lib/jquery/jquery-3.2.1.min.js"></script>
+<script src="/assets/js/app.js"></script>
+<script src="/assets/lib/layui/layui.all.js"></script>
+<script src="/assets/js/djzhb/validate.js"></script>
+<script src="/assets/js/djzhb/login.js"></script>
+</body>
+</html>

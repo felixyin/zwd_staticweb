@@ -1,0 +1,38 @@
+{
+  "isAlert": false,
+  "resultData": {
+    "total": 5,
+    "data": [
+      {
+        "url": "http://127.0.0.1:8000/page/djzhb/hqbz/bghc.html",
+        "name": "办公耗材",
+        "icon": "icon-bangonghaocai",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://127.0.0.1:8000/page/djzhb/hqbz/gcgl.html",
+        "name": "公车管理",
+        "icon": "icon-gongwuyongche",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://127.0.0.1:8000/page/djzhb/hqbz/gcjy.html",
+        "name": "公车加油",
+        "icon": "icon-jiayou",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://127.0.0.1:8000/page/djzhb/hqbz/gcwx.html",
+        "name": "公车维修",
+        "icon": "icon-caozuo",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://127.0.0.1:8000/page/djzhb/hqbz/lyjl.html",
+        "name": "领用记录",
+        "icon": "icon-tuoguan",
+        "target": "main_frame"
+      }
+    ]
+  }
+}

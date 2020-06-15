@@ -1,0 +1,16 @@
+{
+  "menu": {
+    "menu": "固定资产",
+    "menu2": "办公设备"
+  },
+  "schema": {
+    "id": 1,
+    "devname": "设备名称",
+    "addr": "存放位置",
+    "dept": "使用部门",
+    "username": "使用人",
+    "fenpeitime": "分配日期",
+    "nianxian": "折旧年限",
+    "desc": "备注"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "isAlert": false,
+  "resultData": {
+    "total": 1,
+    "data": [
+      {
+        "url": "http://39.104.21.7:20312/res/page/data_display/PartyBuilding/index.html",
+        "name": "大数据",
+        "icon": "icon-dangjiandashuju",
+        "target": "_blank"
+      }
+    ]
+  }
+}

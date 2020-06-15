@@ -1,0 +1,15 @@
+{
+  "menu": {
+    "menu": "档案管理",
+    "menu2": "会议档案"
+  },
+  "schema": {
+    "id": 1,
+    "zhuusername": "主会人",
+    "huitime": "会议时间",
+    "name": "文件名称",
+    "type": "文件类别",
+    "dtime": "记录日期",
+    "files": "f，f,"
+  }
+}

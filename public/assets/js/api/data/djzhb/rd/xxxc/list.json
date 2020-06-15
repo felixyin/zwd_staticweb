@@ -1,0 +1,40 @@
+{
+  "isAlert": false,
+  "status": 200,
+  "resultData": {
+    "total": 2,
+    "totalPage": 10,
+    "hint": "",
+    "limit": 1,
+    "page": 1,
+    "status": 200,
+    "data": [
+      {
+        "id": "0",
+        "name": "张浩",
+        "hddd": "活动室",
+        "hdsj": "2015年7月",
+        "hdzt": "人大学习",
+        "hdrs": "34",
+        "hdxs": "面对面",
+        "hdnr": "学习人大主张",
+        "type": "",
+        "hdkqb": "",
+        "bssdjb": ""
+      },
+      {
+        "id": "1",
+        "name": "刘叶",
+        "hddd": "活动室",
+        "hdsj": "2014年7月",
+        "hdzt": "的",
+        "hdrs": "34",
+        "hdxs": "面对面",
+        "hdnr": "学习人大主张",
+        "type": "",
+        "hdkqb": "",
+        "bssdjb": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>办公耗材</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/assets/lib/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="/assets/lib/viewer/viewer.min.css"/>
+    <link rel="stylesheet" href="/assets/css/common/style.css" media="all">
+    <link rel="stylesheet" href="/assets/css/djzhb/hqbz/bghc/list.css" media="all">
+    
+    
+    <style type="text/css">
+        .layui-laypage .layui-laypage-curr .layui-laypage-em{
+            background-color: lightskyblue!important;
+        }
+        .layui-btn-danger {
+            background-color: lightblue!important;
+        }
+    </style>
+    
+
+</head>
+<body>
+<div class="layui-fluid" style="padding-top:10px;">
+	<span class="layui-breadcrumb">
+	  <a><cite>首页</cite></a>
+	  <a><cite>办公耗材</cite></a>
+	</span>
+    <!-- 右上角按钮 -->
+        <div style="float:right;">
+            <button class="layui-btn layui-btn-sm layui-btn-normal"  onclick="addDataFunc()">
+                <i class="layui-icon">&#xe654;</i>
+                添加
+            </button>
+        </div>
+
+    <div class="layui-clear"></div>
+
+    <blockquote class="layui-elem-quote layui-quote-nm " style="margin-top:1px;">
+        <form class="layui-form BTNSHOW BTNSHOW_QUERY" action="javascript:;" id="query_condition">
+            <div class="layui-form-item" style="margin-bottom:0;">
+                <div class="layui-inline" style="width:100%">
+                    <div class="searchbut">
+                        <!-- <div class="butsure">
+                                <label class="layui-form-label">查询条件：</label>
+                             </div> -->
+                        <div id="condition_class" class="layui-inline">
+                            
+                            <div class="layui-input-inline">
+                                <input type="text" name="categ" id="categ-id" defaultmsg="分类"
+                                       placeholder="分类" lay-filter='categ' class="layui-input"
+                                       condition=""/>
+                            </div>
+                            
+                            <div class="layui-input-inline">
+                                <input type="text" name="name" id="name-id" defaultmsg="名称"
+                                       placeholder="名称" lay-filter='name' class="layui-input"
+                                       condition=""/>
+                            </div>
+                            
+                            <div class="layui-input-inline">
+                                <input type="text" name="supl" id="supl-id" defaultmsg="供应商"
+                                       placeholder="供应商" lay-filter='supl' class="layui-input"
+                                       condition=""/>
+                            </div>
+                            
+                            <div class="layui-input-inline">
+                                <input type="text" name="kucun" id="kucun-id" defaultmsg="库存"
+                                       placeholder="库存" lay-filter='kucun' class="layui-input"
+                                       condition=""/>
+                            </div>
+                            
+                            <div class="layui-input-inline">
+                                <input type="text" name="dtime" id="dtime-id" defaultmsg="采购时间"
+                                       placeholder="采购时间" lay-filter='dtime' class="layui-input"
+                                       condition=""/>
+                            </div>
+                            
+                            <div class="layui-input-inline">
+                                <input type="text" name="desc" id="desc-id" defaultmsg="备注"
+                                       placeholder="备注" lay-filter='desc' class="layui-input"
+                                       condition=""/>
+                            </div>
+                            
+                            <div class="layui-input-inline" id="searchbutton">
+                                <button class="layui-btn layui-btn-normal" lay-submit lay-filter="queryData">
+                                    <i class="layui-icon ">&#xe615</i>
+                                </button>
+                                <button class="layui-btn layui-btn-normal" id="Reload">
+                                    <i title="刷新" class="layui-icon ">&#xe669</i>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </blockquote>
+
+    <!--主题表格数据开始-->
+    <table id="tabledata" lay-filter="test"></table>
+
+    <div class="layui-tab-item">
+        <div id="pageDemo"></div>
+    </div>
+</div>
+
+<!--编辑表格弹出层开始-->
+<form id="form_edit" class="layui-form" style=" display:none;margin-top:30px;" action="">
+    <input type="hidden" id="id" name="id" autocomplete="off" class="layui-input">
+    
+    <div class="layui-form-item">
+        
+            <label class="layui-form-label">分类</label>
+            <div class="layui-input-inline">
+                <input type="text" name="categ" id="categ_edit"
+                       class="layui-input"  placeholder="分类"/>
+            </div>
+        
+        
+            <label class="layui-form-label">
+<!--                <span style="color:red;">*</span>-->
+                名称</label>
+            <div class="layui-input-inline">
+                <input type="text" name="name" id="name_edit"
+                       class="layui-input"  placeholder="名称"/>
+            </div>
+        
+    </div>
+    
+    <div class="layui-form-item">
+        
+            <label class="layui-form-label">供应商</label>
+            <div class="layui-input-inline">
+                <input type="text" name="supl" id="supl_edit"
+                       class="layui-input"  placeholder="供应商"/>
+            </div>
+        
+        
+            <label class="layui-form-label">
+<!--                <span style="color:red;">*</span>-->
+                库存</label>
+            <div class="layui-input-inline">
+                <input type="text" name="kucun" id="kucun_edit"
+                       class="layui-input"  placeholder="库存"/>
+            </div>
+        
+    </div>
+    
+    <div class="layui-form-item">
+        
+            <label class="layui-form-label">采购时间</label>
+            <div class="layui-input-inline">
+                <input type="text" name="dtime" id="dtime_edit"
+                       class="layui-input"  placeholder="采购时间"/>
+            </div>
+        
+        
+            <label class="layui-form-label">
+<!--                <span style="color:red;">*</span>-->
+                备注</label>
+            <div class="layui-input-inline">
+                <input type="text" name="desc" id="desc_edit"
+                       class="layui-input"  placeholder="备注"/>
+            </div>
+        
+    </div>
+    
+
+    <div class="layui-form-item" id="bntgroup">
+        <div class="from_but">
+            <button class="layui-btn layui-btn-normal" id="queryCondBtn" lay-submit lay-filter="editInfo">提交</button>
+        </div>
+    </div>
+</form>
+
+
+<script src="/assets/lib/jquery/jquery-3.2.1.min.js"></script>
+<script src="/assets/js/app.js"></script>
+<script src="/assets/js/common/range.js"></script>
+<script src="/assets/lib/viewer/viewer.min.js"></script>
+<script src="/assets/js/common/validate.js"></script>
+<script src="/assets/lib/layui/layui.all.js"></script>
+<script src="/assets/js/djzhb/hqbz/bghc/list.js"></script>
+</body>
+</html>

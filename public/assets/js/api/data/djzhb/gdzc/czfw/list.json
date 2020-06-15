@@ -1,0 +1,36 @@
+{
+  "isAlert": false,
+  "status": 200,
+  "resultData": {
+    "total": 2,
+    "totalPage": 10,
+    "hint": "",
+    "limit": 1,
+    "page": 1,
+    "status": 200,
+    "data": [
+      {
+        "id": "0",
+        "addr": "南二环120号",
+        "area": "213平",
+        "username": "昭武",
+        "yongtu": "办公",
+        "begintime": "2014年3月12日",
+        "endtime": "2020年5月15日",
+        "money": "80万",
+        "desc": ""
+      },
+      {
+        "id": "1",
+        "addr": "北街230号",
+        "area": "150平",
+        "username": "少杰",
+        "yongtu": "商业",
+        "begintime": "2014年3月12日",
+        "endtime": "2020年5月15日",
+        "money": "150万",
+        "desc": ""
+      }
+    ]
+  }
+}

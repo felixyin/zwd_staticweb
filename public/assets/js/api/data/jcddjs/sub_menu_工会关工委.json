@@ -1,0 +1,20 @@
+{
+  "isAlert": false,
+  "resultData": {
+    "total": 2,
+    "data": [
+      {
+        "url": "http://127.0.0.1:8000/page/jcddjs/ghggw/ggw.html",
+        "name": "关工委",
+        "icon": "icon-gongweizhidu",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://127.0.0.1:8000/page/jcddjs/ghggw/gh.html",
+        "name": "工会",
+        "icon": "icon-gonghui",
+        "target": "main_frame"
+      }
+    ]
+  }
+}

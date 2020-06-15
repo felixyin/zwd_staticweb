@@ -1,0 +1,20 @@
+{
+  "isAlert": false,
+  "resultData": {
+    "total": 2,
+    "data": [
+      {
+        "url": "http://127.0.0.1:8000/page/djzhb/zhdd/rydd.html",
+        "name": "人员调度",
+        "icon": "icon-renyuantiaodu1",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://127.0.0.1:8000/page/djzhb/zhdd/wzfp.html",
+        "name": "物资分配",
+        "icon": "icon-fenpei",
+        "target": "main_frame"
+      }
+    ]
+  }
+}

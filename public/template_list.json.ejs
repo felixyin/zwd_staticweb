@@ -1,0 +1,28 @@
+{
+    "isAlert": false,
+    "status": 200,
+    "resultData": {
+        "total": <%=data.count%>,
+        "totalPage": 10,
+        "hint": "",
+        "limit": 1,
+        "page": 1,
+        "status": 200 ,
+        "data": [
+<% // Generate four random hex digits.
+function S4() {
+    return (((1+Math.random())*0x10000)|0).toString(16).substring(1);
+};
+// Generate a pseudo-GUID by concatenating random hexadecimal.
+function guid() {
+    return (S4()+S4()+"-"+S4()+"-"+S4()+"-"+S4()+"-"+S4()+S4()+S4());
+}; for(var i = 0;i < data.count ;i++){  %>
+            {
+                "id": "<%=guid()%>",
+<% for(var k = 0;k < data.schema.length;k++){  var sk = data.schema[k]; %>
+                "<%=sk.key%>": "<%=sk.value%>"<% if(k != data.schema.length-1){%>,<%}%>
+<%}%>           } <% if(i != data.count-1){%>,<%}%>
+<%}%>
+        ]
+    }
+}

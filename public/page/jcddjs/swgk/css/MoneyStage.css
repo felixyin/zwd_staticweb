@@ -1,0 +1,137 @@
+.ExposureStage_container{
+	width: 1200px;
+	margin: 0px auto;
+	
+}
+.clickall li{
+	display: inline-block;
+}
+.lookstyle{
+	width: 1200px;
+	height: 220px;
+	line-height: 220px;
+	text-align: center;
+	margin: 0px auto ;
+	background: rgba(255,255,255,0.8);
+    position: absolute;
+    z-index: 999999999;
+    top: 480px;
+}
+#contertextp{
+	width: 850px;
+	margin: 0px auto;
+	text-align: center;
+	height: 150px;
+}
+.fristul li{
+	display: inline-block;
+}
+.cleardiv{
+	width: 1200px;
+	height:40px;
+	background: #fff;
+	margin-top:20px;
+}
+
+.mengshi{
+	border: 0px;
+	width: 380px;;
+	height: 60px;
+	color:#fff;
+}
+.jiequ{
+	width: 380px;;
+	height: 60px;
+	color:#c40311;
+	background: rgba(255,255,255,0.8);
+	border: 1px solid #c40311;
+}
+
+.secondtul input{
+	 width: 100%;
+    height: 100%;
+    border: 1px solid #c40311;
+}
+.secondtul{
+	width:345px;
+	height: 55px;
+	border: 1px solid #c40311;
+}
+.second_thrid{
+	width:116px;
+	height: 55px;
+	border: 1px solid #c40311;
+	background:#c40311;
+}
+.contertextp input{
+	
+	padding-left:10px;
+
+}
+.contertextp select{
+	padding-left:10px;
+}
+.project{
+	position: relative;
+}
+.projectname{
+	text-align: center;
+	margin: 40px 0px;
+}
+#projectlist {
+	width:100%;
+	margin-left:0px;
+}
+
+#projectlist li{
+	display: none;
+	cursor: pointer;
+	padding-top:10px;
+	display: inline-block;
+	height: 48px;
+	text-align: center;
+	width: 33%;
+}
+#layPagetext{
+	width: 100%;
+	text-align: center;
+}
+#tabledata ul li{
+	display: inline-block;
+}
+.whitespace{
+	width:660px ;
+	text-overflow:ellipsis; 
+	white-space:nowrap;
+	display: inline-block;
+	overflow: hidden;
+}
+.tableshu{
+	margin-bottom: 20px;
+}
+
+.projectname{
+	text-align: center;
+	margin: 40px 0px;
+}
+.lookelem{
+	margin: 0px auto;
+	color:#c40311 ;
+	border-radius: 5px;
+	width:80px ;
+	height:34px;
+	border:1px  solid #c40311 ;
+	text-align: center;
+	line-height: 34px;
+}
+.lookelem a{
+	color:#c40311 ;
+	text-decoration: none;
+}
+.lookelem img{
+	margin-top:-6px;
+    width: 22px;
+}
+.lookelem li{
+	display: inline-block;
+}

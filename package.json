@@ -1,0 +1,32 @@
+{
+  "name": "staticweb",
+  "version": "1.0.0",
+  "description": "昭乌达智慧党建信息平台",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "gen-code": "node ./public/gen-front.js",
+    "import-json-to-mongo": "cd public;node init-db.js;cd .."
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "mongodb": "^3.5.8",
+    "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "ejs": "^3.1.3",
+    "fs-extra": "^9.0.0"
+  },
+  "mongoUrl": "mongodb://localhost:27017/",
+  "dataPath": "assets/js/api/data/",
+  "gen": {
+    "genDataCount": 100,
+    "httpRoot": "http://127.0.0.1:8000",
+    "isGenData": false,
+    "isGenMenu": false,
+    "subProjectName": "djzhb"
+  }
+}

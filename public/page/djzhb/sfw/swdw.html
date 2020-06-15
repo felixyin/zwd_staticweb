@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>收文（党委）</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/assets/lib/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="/assets/lib/viewer/viewer.min.css"/>
+    <link rel="stylesheet" href="/assets/css/common/style.css" media="all">
+    <link rel="stylesheet" href="/assets/css/djzhb/sfw/swdw/list.css" media="all">
+    
+    
+    <style type="text/css">
+        .layui-laypage .layui-laypage-curr .layui-laypage-em{
+            background-color: lightskyblue!important;
+        }
+        .layui-btn-danger {
+            background-color: lightblue!important;
+        }
+    </style>
+    
+
+</head>
+<body>
+<div class="layui-fluid" style="padding-top:10px;">
+	<span class="layui-breadcrumb">
+	  <a><cite>首页</cite></a>
+	  <a><cite>收文（党委）</cite></a>
+	</span>
+    <!-- 右上角按钮 -->
+        <div style="float:right;">
+            <button class="layui-btn layui-btn-sm layui-btn-normal"  onclick="addDataFunc()">
+                <i class="layui-icon">&#xe654;</i>
+                添加
+            </button>
+        </div>
+
+    <div class="layui-clear"></div>
+
+    <blockquote class="layui-elem-quote layui-quote-nm " style="margin-top:1px;">
+        <form class="layui-form BTNSHOW BTNSHOW_QUERY" action="javascript:;" id="query_condition">
+            <div class="layui-form-item" style="margin-bottom:0;">
+                <div class="layui-inline" style="width:100%">
+                    <div class="searchbut">
+                        <!-- <div class="butsure">
+                                <label class="layui-form-label">查询条件：</label>
+                             </div> -->
+                        <div id="condition_class" class="layui-inline">
+                            
+                            <div class="layui-input-inline">
+                                <input type="text" name="dtime" id="dtime-id" defaultmsg="来文日期"
+                                       placeholder="来文日期" lay-filter='dtime' class="layui-input"
+                                       condition=""/>
+                            </div>
+                            
+                            <div class="layui-input-inline">
+                                <input type="text" name="lwzh" id="lwzh-id" defaultmsg="来文字号"
+                                       placeholder="来文字号" lay-filter='lwzh' class="layui-input"
+                                       condition=""/>
+                            </div>
+                            
+                            <div class="layui-input-inline">
+                                <input type="text" name="lwdw" id="lwdw-id" defaultmsg="来文单位"
+                                       placeholder="来文单位" lay-filter='lwdw' class="layui-input"
+                                       condition=""/>
+                            </div>
+                            
+                            <div class="layui-input-inline">
+                                <input type="text" name="pwsx" id="pwsx-id" defaultmsg="来文份数"
+                                       placeholder="来文份数" lay-filter='pwsx' class="layui-input"
+                                       condition=""/>
+                            </div>
+                            
+                            <div class="layui-input-inline">
+                                <input type="text" name="rjh" id="rjh-id" defaultmsg="入卷号"
+                                       placeholder="入卷号" lay-filter='rjh' class="layui-input"
+                                       condition=""/>
+                            </div>
+                            
+                            <div class="layui-input-inline">
+                                <input type="text" name="wjzy" id="wjzy-id" defaultmsg="文件摘要"
+                                       placeholder="文件摘要" lay-filter='wjzy' class="layui-input"
+                                       condition=""/>
+                            </div>
+                            
+                            <div class="layui-input-inline">
+                                <input type="text" name="nbyj" id="nbyj-id" defaultmsg="拟办意见"
+                                       placeholder="拟办意见" lay-filter='nbyj' class="layui-input"
+                                       condition=""/>
+                            </div>
+                            
+                            <div class="layui-input-inline">
+                                <input type="text" name="nbsj" id="nbsj-id" defaultmsg="拟办时间"
+                                       placeholder="拟办时间" lay-filter='nbsj' class="layui-input"
+                                       condition=""/>
+                            </div>
+                            
+                            <div class="layui-input-inline">
+                                <input type="text" name="cyyj" id="cyyj-id" defaultmsg="传阅时间"
+                                       placeholder="传阅时间" lay-filter='cyyj' class="layui-input"
+                                       condition=""/>
+                            </div>
+                            
+                            <div class="layui-input-inline">
+                                <input type="text" name="ssbm" id="ssbm-id" defaultmsg="所涉部门"
+                                       placeholder="所涉部门" lay-filter='ssbm' class="layui-input"
+                                       condition=""/>
+                            </div>
+                            
+                            <div class="layui-input-inline">
+                                <input type="text" name="lsqk" id="lsqk-id" defaultmsg="落实情况"
+                                       placeholder="落实情况" lay-filter='lsqk' class="layui-input"
+                                       condition=""/>
+                            </div>
+                            
+                            <div class="layui-input-inline" id="searchbutton">
+                                <button class="layui-btn layui-btn-normal" lay-submit lay-filter="queryData">
+                                    <i class="layui-icon ">&#xe615</i>
+                                </button>
+                                <button class="layui-btn layui-btn-normal" id="Reload">
+                                    <i title="刷新" class="layui-icon ">&#xe669</i>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </blockquote>
+
+    <!--主题表格数据开始-->
+    <table id="tabledata" lay-filter="test"></table>
+
+    <div class="layui-tab-item">
+        <div id="pageDemo"></div>
+    </div>
+</div>
+
+<!--编辑表格弹出层开始-->
+<form id="form_edit" class="layui-form" style=" display:none;margin-top:30px;" action="">
+    <input type="hidden" id="id" name="id" autocomplete="off" class="layui-input">
+    
+    <div class="layui-form-item">
+        
+            <label class="layui-form-label">来文日期</label>
+            <div class="layui-input-inline">
+                <input type="text" name="dtime" id="dtime_edit"
+                       class="layui-input"  placeholder="来文日期"/>
+            </div>
+        
+        
+            <label class="layui-form-label">
+<!--                <span style="color:red;">*</span>-->
+                来文字号</label>
+            <div class="layui-input-inline">
+                <input type="text" name="lwzh" id="lwzh_edit"
+                       class="layui-input"  placeholder="来文字号"/>
+            </div>
+        
+    </div>
+    
+    <div class="layui-form-item">
+        
+            <label class="layui-form-label">来文单位</label>
+            <div class="layui-input-inline">
+                <input type="text" name="lwdw" id="lwdw_edit"
+                       class="layui-input"  placeholder="来文单位"/>
+            </div>
+        
+        
+            <label class="layui-form-label">
+<!--                <span style="color:red;">*</span>-->
+                来文份数</label>
+            <div class="layui-input-inline">
+                <input type="text" name="pwsx" id="pwsx_edit"
+                       class="layui-input"  placeholder="来文份数"/>
+            </div>
+        
+    </div>
+    
+    <div class="layui-form-item">
+        
+            <label class="layui-form-label">入卷号</label>
+            <div class="layui-input-inline">
+                <input type="text" name="rjh" id="rjh_edit"
+                       class="layui-input"  placeholder="入卷号"/>
+            </div>
+        
+        
+            <label class="layui-form-label">
+<!--                <span style="color:red;">*</span>-->
+                文件摘要</label>
+            <div class="layui-input-inline">
+                <input type="text" name="wjzy" id="wjzy_edit"
+                       class="layui-input"  placeholder="文件摘要"/>
+            </div>
+        
+    </div>
+    
+    <div class="layui-form-item">
+        
+            <label class="layui-form-label">拟办意见</label>
+            <div class="layui-input-inline">
+                <input type="text" name="nbyj" id="nbyj_edit"
+                       class="layui-input"  placeholder="拟办意见"/>
+            </div>
+        
+        
+            <label class="layui-form-label">
+<!--                <span style="color:red;">*</span>-->
+                拟办时间</label>
+            <div class="layui-input-inline">
+                <input type="text" name="nbsj" id="nbsj_edit"
+                       class="layui-input"  placeholder="拟办时间"/>
+            </div>
+        
+    </div>
+    
+    <div class="layui-form-item">
+        
+            <label class="layui-form-label">传阅时间</label>
+            <div class="layui-input-inline">
+                <input type="text" name="cyyj" id="cyyj_edit"
+                       class="layui-input"  placeholder="传阅时间"/>
+            </div>
+        
+        
+            <label class="layui-form-label">
+<!--                <span style="color:red;">*</span>-->
+                所涉部门</label>
+            <div class="layui-input-inline">
+                <input type="text" name="ssbm" id="ssbm_edit"
+                       class="layui-input"  placeholder="所涉部门"/>
+            </div>
+        
+    </div>
+    
+    <div class="layui-form-item">
+        
+            <label class="layui-form-label">落实情况</label>
+            <div class="layui-input-inline">
+                <input type="text" name="lsqk" id="lsqk_edit"
+                       class="layui-input"  placeholder="落实情况"/>
+            </div>
+        
+        
+    </div>
+    
+
+    <div class="layui-form-item" id="bntgroup">
+        <div class="from_but">
+            <button class="layui-btn layui-btn-normal" id="queryCondBtn" lay-submit lay-filter="editInfo">提交</button>
+        </div>
+    </div>
+</form>
+
+
+<script src="/assets/lib/jquery/jquery-3.2.1.min.js"></script>
+<script src="/assets/js/app.js"></script>
+<script src="/assets/js/common/range.js"></script>
+<script src="/assets/lib/viewer/viewer.min.js"></script>
+<script src="/assets/js/common/validate.js"></script>
+<script src="/assets/lib/layui/layui.all.js"></script>
+<script src="/assets/js/djzhb/sfw/swdw/list.js"></script>
+</body>
+</html>

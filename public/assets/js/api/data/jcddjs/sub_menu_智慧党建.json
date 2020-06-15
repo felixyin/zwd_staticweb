@@ -1,0 +1,98 @@
+{
+  "isAlert": false,
+  "resultData": {
+    "total": 15,
+    "data": [
+      {
+        "url": "http://127.0.0.1:8000/page/jcddjs/zhdj/ddkp.html",
+        "name": "督导考评",
+        "icon": "icon-kaoping",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://127.0.0.1:8000/page/jcddjs/zhdj/df.html",
+        "name": "党费",
+        "icon": "icon-dangfeishoujiao",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://127.0.0.1:8000/page/jcddjs/zhdj/dygl.html",
+        "name": "党员管理",
+        "icon": "icon-fazhandangyuan",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://127.0.0.1:8000/page/jcddjs/zhdj/dzzjg.html",
+        "name": "党组织机构",
+        "icon": "icon-zuzhijigou",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://127.0.0.1:8000/page/jcddjs/zhdj/fzdy.html",
+        "name": "发展党员",
+        "icon": "icon-fazhandangyuan",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://127.0.0.1:8000/page/jcddjs/zhdj/hjxj.html",
+        "name": "换届选举",
+        "icon": "icon-jicenghuanjie",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://127.0.0.1:8000/page/jcddjs/zhdj/mzpydy.html",
+        "name": "民主评议党员",
+        "icon": "icon-shenghuohuijiminzhupingyigongzuo",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://127.0.0.1:8000/page/jcddjs/zhdj/qyhdj.html",
+        "name": "区域化党建",
+        "icon": "icon-dangjian",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://127.0.0.1:8000/page/jcddjs/zhdj/shyk.html",
+        "name": "三会一课",
+        "icon": "icon-sanhuiyike",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://127.0.0.1:8000/page/jcddjs/zhdj/sxzd.html",
+        "name": "三项制度",
+        "icon": "icon-fuwuzhidu",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://127.0.0.1:8000/page/jcddjs/zhdj/sylgk.html",
+        "name": "四议两公开",
+        "icon": "icon-gongkai",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://127.0.0.1:8000/page/jcddjs/zhdj/xxjy.html",
+        "name": "学习教育",
+        "icon": "icon-xuexi",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://127.0.0.1:8000/page/jcddjs/zhdj/ztdrhd.html",
+        "name": "主题党日活动",
+        "icon": "icon-huodong",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://127.0.0.1:8000/page/jcddjs/zhdj/zzdyjsq.html",
+        "name": "在职党员进社区",
+        "icon": "icon-shequ",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://127.0.0.1:8000/page/jcddjs/zhdj/zzsh.html",
+        "name": "组织生活",
+        "icon": "icon-13",
+        "target": "main_frame"
+      }
+    ]
+  }
+}

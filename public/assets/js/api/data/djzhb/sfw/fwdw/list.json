@@ -1,0 +1,32 @@
+{
+  "isAlert": false,
+  "status": 200,
+  "resultData": {
+    "total": 2,
+    "totalPage": 10,
+    "hint": "",
+    "limit": 1,
+    "page": 1,
+    "status": 200,
+    "data": [
+      {
+        "id": "0",
+        "fwh": "[2012]1号",
+        "dtime": "2012年6月3日",
+        "filename": "昭乌达路党工委文件",
+        "zsdw": "行政机关",
+        "nwbm": "行政部门",
+        "nwqz": "张德明"
+      },
+      {
+        "id": "1",
+        "fwh": "[2012]1号",
+        "dtime": "2012年8月3日",
+        "filename": "昭乌达路党工委文件",
+        "zsdw": "行政机关",
+        "nwbm": "行政部门",
+        "nwqz": "刘明"
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "isAlert": false,
+  "resultData": {
+    "total": 4,
+    "data": [
+      {
+        "url": "http://127.0.0.1:8000/page/jcddjs/tw/hygl.html",
+        "name": "会议管理",
+        "icon": "icon-huiyikaihuitaolun",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://127.0.0.1:8000/page/jcddjs/tw/qt.html",
+        "name": "其他",
+        "icon": "icon-other",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://127.0.0.1:8000/page/jcddjs/tw/twgl.html",
+        "name": "团委管理",
+        "icon": "icon-gongqingtuanweiyuanhui",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://127.0.0.1:8000/page/jcddjs/tw/zzjs.html",
+        "name": "组织建设",
+        "icon": "icon-zuzhi",
+        "target": "main_frame"
+      }
+    ]
+  }
+}

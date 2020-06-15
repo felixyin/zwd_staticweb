@@ -1,0 +1,2 @@
+运行需要windows10 安装 windows terminal preview
+或者自己手动部署

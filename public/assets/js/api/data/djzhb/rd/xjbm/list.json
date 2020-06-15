@@ -1,0 +1,32 @@
+{
+  "isAlert": false,
+  "status": 200,
+  "resultData": {
+    "total": 2,
+    "totalPage": 10,
+    "hint": "",
+    "limit": 1,
+    "page": 1,
+    "status": 200,
+    "data": [
+      {
+        "id": "0",
+        "name": "刘曦",
+        "desc": "干部",
+        "xjqk": "通过",
+        "xjqkfj": "",
+        "bmqk": "通过",
+        "bmqkfj": ""
+      },
+      {
+        "id": "1",
+        "name": "张明",
+        "desc": "干部",
+        "xjqk": "通过",
+        "xjqkfj": "",
+        "bmqk": "通过",
+        "bmqkfj": ""
+      }
+    ]
+  }
+}

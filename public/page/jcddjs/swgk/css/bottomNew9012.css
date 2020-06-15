@@ -1,0 +1,108 @@
+#bottom {
+	width: 100%;
+	min-width: 1100px;
+	height: auto;
+	background: #121d3b;
+}
+
+img {
+	border: none;
+}
+
+.bottom {
+	width: 1200px;
+    height: 150px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+.f-cb:after {
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+	overflow: hidden;
+	content: ".";
+}
+
+.bottomBtnPlace {
+	width: 100%;
+	background: #121d3b;
+}
+
+.bottomBtnPlace .containerPcf {
+	text-align: center;
+	width: 1200px;
+	background: #121d3b;
+	margin: auto;
+	height: 55px;
+}
+
+.bottomBtnPlace .containerPcf .hoverBt {
+	width: 285px;
+	height: 61px;
+	float: left;
+	position: relative;
+	margin-left: 24px;
+}
+
+.bottomBtnPlace .containerPcf .hoverBt .bacP {
+	/*background: #2a344e url("icondown001.png") no-repeat 224px 16px !important;*/
+	transition: 0.1s;
+}
+
+.bottomBtnPlace .containerPcf .hoverBt p {
+	transition: 0.1s;
+	font-size: 16px;
+	display: block;
+	border:1px solid #313a54;
+	cursor: pointer;
+	width: 241px;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	padding-left: 19px;
+	
+	/*background: #2a344e url("iconup001.png") no-repeat 224px 16px;*/
+	box-sizing: content-box
+}
+
+.bottomBtnPlace .containerPcf .maLeft {
+	margin-left: 20px;
+}
+
+.bottomBtnPlace .containerPcf .hoverBt .hidBox {
+	position: absolute;
+	width: 1200px;
+	background: #2a344e;
+	bottom: 60px;
+	z-index: 1111;
+	display: none;
+	left: -24px;
+}
+
+.bottomBtnPlace .containerPcf .hoverBt .hidBox ul {
+	padding: 5px 0 20px 0
+}
+
+.bottomBtnPlace .containerPcf .hoverBt .hidBox ul li {
+	width: 248px;
+	float: left;
+	margin-left: 23px;
+	margin-top: 12px;
+	height: 20px;
+	line-height: 20px
+}
+
+.bottomBtnPlace .containerPcf .hoverBt .hidBox ul li a {
+	font-size: 16px;
+	color: #fff;
+}
+
+.bottomBtnPlace .containerPcf .hoverBt .hidBox ul li a:hover {
+	color: #c3040f
+}
+
+.bottomBtnPlace .containerPcf .hoverBt .pos1 {
+	left: -304px;
+}

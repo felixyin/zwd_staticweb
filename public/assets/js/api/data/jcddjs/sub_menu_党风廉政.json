@@ -1,0 +1,14 @@
+{
+  "isAlert": false,
+  "resultData": {
+    "total": 1,
+    "data": [
+      {
+        "url": "http://127.0.0.1:8000/page/jcddjs/dflz/dflz.html",
+        "name": "党风廉政",
+        "icon": "icon-lianzhengjianshe",
+        "target": "main_frame"
+      }
+    ]
+  }
+}

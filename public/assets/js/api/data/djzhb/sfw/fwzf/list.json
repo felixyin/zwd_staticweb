@@ -1,0 +1,32 @@
+{
+  "isAlert": false,
+  "status": 200,
+  "resultData": {
+    "total": 2,
+    "totalPage": 10,
+    "hint": "",
+    "limit": 1,
+    "page": 1,
+    "status": 200,
+    "data": [
+      {
+        "id": "0",
+        "fwh": "[2013]124号",
+        "dtime": "2013年2月1日",
+        "filename": "专科学校指示",
+        "zsdw": "行政部门",
+        "nwbm": "人事",
+        "nwqz": "吴晓梅"
+      },
+      {
+        "id": "1",
+        "fwh": "[2016]113号",
+        "dtime": "2016年5月1日",
+        "filename": "高校假设指示",
+        "zsdw": "行政部门",
+        "nwbm": "人事",
+        "nwqz": "李春华"
+      }
+    ]
+  }
+}

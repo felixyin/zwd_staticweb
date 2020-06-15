@@ -1,0 +1,38 @@
+{
+  "isAlert": false,
+  "resultData": {
+    "total": 5,
+    "data": [
+      {
+        "url": "http://127.0.0.1:8000/page/jcddjs/hszh/jzhd.html",
+        "name": "救助活动",
+        "icon": "icon-weibiaoti--",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://127.0.0.1:8000/page/jcddjs/hszh/qt.html",
+        "name": "其他",
+        "icon": "icon-other",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://127.0.0.1:8000/page/jcddjs/hszh/xchd.html",
+        "name": "宣传活动",
+        "icon": "icon-xuanchuan",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://127.0.0.1:8000/page/jcddjs/hszh/xxpx.html",
+        "name": "学习培训",
+        "icon": "icon-peixun",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://127.0.0.1:8000/page/jcddjs/hszh/zdjz.html",
+        "name": "重大救助",
+        "icon": "icon-rendaojiuzhu",
+        "target": "main_frame"
+      }
+    ]
+  }
+}

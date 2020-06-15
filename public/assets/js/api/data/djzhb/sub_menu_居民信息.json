@@ -1,0 +1,56 @@
+{
+  "isAlert": false,
+  "resultData": {
+    "total": 42360,
+    "data": [
+      {
+        "url": "http://39.104.21.7:20312/res/page/info/bak_list.html",
+        "name": "居民信息",
+        "icon": "icon-renshiguanli",
+        "target": "main_frame"
+      },
+      {
+        "url": "http://39.104.21.7:20312/res/page/Management/Street_list.html",
+        "name": "街道管理",
+        "icon": "icon-jiedaoguanli",
+        "target": "main_frame"
+      },
+	  {
+        "url": "http://39.104.21.7:20312/res/page/Management/Community_list.html",
+        "name": "社区管理",
+        "icon": "icon-shequguanli",
+        "target": "main_frame"
+      },
+	  {
+        "url": "http://39.104.21.7:20312/res/page/Management/ResidentialQuarters_list.html",
+        "name": "小区管理",
+        "icon": "icon-xiaoqu",
+        "target": "main_frame"
+      },
+	  {
+        "url": "http://39.104.21.7:20312/res/page/Management/Floor_list.html",
+        "name": "楼栋管理",
+        "icon": "icon-loudong",
+        "target": "main_frame"
+      },
+	  {
+        "url": "http://39.104.21.7:20312/res/page/Management/Unit_list.html",
+        "name": "单元管理",
+        "icon": "icon-danyuan",
+        "target": "main_frame"
+      },
+	  {
+        "url": "http://39.104.21.7:20312/res/page/Management/Room_list.html",
+        "name": "房间管理",
+        "icon": "icon-fangjian",
+        "target": "main_frame"
+      },
+	  {
+        "url": "http://39.104.21.7:20312/res/page/info/bak_list.html",
+        "name": "人口管理",
+        "icon": "icon-renshiguanli",
+        "target": "main_frame"
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "menu": {
+    "menu": "人大",
+    "menu2": "述职"
+  },
+  "schema": {
+    "id": 1,
+    "username": "代表姓名",
+    "suject": "述职主题",
+    "dtime": "述职时间",
+    "files": "附件"
+  }
+}
+
+
+

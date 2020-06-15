@@ -1,0 +1,316 @@
+@charset "UTF-8";
+/*=======Version-1.O======*/
+/*======Author-SdL=======*/
+/*=====Tim12O42O18======*/
+
+*{
+	font-family: Microsoft YaHei, sans-serif;
+}
+.clearFix:after{
+	display: block;
+	content: "";
+	clear: both;
+	overflow: hidden;
+	position:absolute ;
+	z-index: 9999;
+	top: 340px;
+}
+.center{
+	width: 1100px;
+	margin: 0 auto;
+}
+.FloatL{
+	float: left;
+}
+.FloatR{
+	float: right;
+}
+a:hover{
+	color: #d70416 !important;
+}
+.IUserL_topLi>a>p:hover,.IUserL_ser>ul>li p:hover{
+	color: #d70416 !important;	
+}
+/*--------------------*/
+.IUser{
+	width: 906px;
+	height: 431px;
+}
+.IUserL{
+	float: left;
+	width: 674px;
+	height: 100%;
+	background: rgba(255,255,255,0.8);
+	padding: 10px 20px 0;
+}
+.IUserR{
+	float: right;
+	width: 230px;
+	height: 100%;
+}
+.IUserL_top{
+	height: 110px;
+	padding-top: 10px;
+}
+.IUserL_topMes{
+	width: 244px;
+	height: 100%;
+}
+.IUserL_topMes>img{
+	float: left;
+	padding-left: 10px;
+}
+.IUserL_topMes>p,.IUserL_topMes>h6{
+	float: left;
+	height: 40px;
+	margin-left: 15px;
+}
+.IUserL_topMes>h6{
+	padding-top: 12px;
+	padding-left: 8px;
+	font-size: 17px;
+	font-weight: 500;
+}
+.IUserL_topMes>p{
+	height: 20px;
+	padding: 0 10px;
+	background: #f7b02b;
+	border-radius: 10px;
+	font-size: 13px;
+}
+.IUserL_topLi>a{
+	display: block;
+	float: left;
+	width: 118px;
+	text-align: center;
+	border-left: 1px solid #ccc;
+}
+.IUserL_topLi>a:first-child{
+	border-left: none;
+}
+.IUserL_topLi>a>p:first-child{
+	font-size: 29px;
+	/*line-height: 1.2em;*/
+	color: #d70416;
+	font-weight: bold;
+}.IUserL_topLi>a>p{
+	font-size: 17px;
+	color: #333;
+}
+
+/*--------------20190227修改用户中心右侧图片----------*/
+	.IUserR_LS li>i{
+		float: left;
+	    display: block;
+	    margin: 12px 0 0 35px;
+	    width: 38px;
+	    height: 38px;
+	    background: url(IUserO.png) no-repeat 0 0;
+	    transition: 0.3s;
+	}
+	.IUserR_LS li:first-child i{
+		background-position: -95px 3px;
+	}
+	.IUserR_LS li+li i{
+		background-position: -45px 4px;
+	}
+	.IUserR_LS li+li+li i{
+		background-position: -47px -232px;
+	}
+	.IUserR_LS li+li+li+li i{
+		background-position: -141px 3px;
+	}
+	.IUserR_LS li+li+li+li+li i{
+		background-position: -92px -232px;
+	}
+	.IUserR_LS li+li+li+li+li+li i{
+		background-position:  -3px -232px;
+	}
+	.IUserR_LS li:last-child i{
+		background-position: 4px 4px;
+	}
+/*--------------20190227修改用户中心右侧图片----------*/
+
+
+		.IUserL_ser,.IUserL_bottom{
+			padding-left: 25px;
+			padding-top: 3px;
+		}
+		.IUserL_ser>p{
+			padding-left: 30px;
+			font-size: 17px;
+			font-weight: bold;
+			background: url(IUser_002.png) no-repeat 0 center;
+		}
+		.IUserL_ser>ul{
+			width: 100%;
+		}
+		.IUserL_ser>ul>li{
+			float: left;
+			width: 25%;
+			padding: 10px 0;
+			text-align: center;
+		}
+
+		.IUserL_ser>ul>li p{
+			padding-top: 5px;
+			line-height: 1.5em;
+			color: #333;
+			position: relative;
+		}
+		.IUserL_ser>ul>li p>img{
+			position: absolute;
+		    margin: auto;
+		    top: 0;
+		    bottom: 0;
+		    left: 0;
+		    right: 0;
+		}
+		.IUserL_ser>ul>li p:first-child{
+			height: 55px;
+			text-align: center;
+			background: url(IUser_bg00.png) no-repeat center center;	
+		}
+		.IUserL_bottom>p{
+			padding-left: 30px;
+			font-size: 17px;
+			font-weight: bold;
+			background: url(IUser_003.png) no-repeat 0 center;
+		}
+		.IUserL_bottom>ul{
+			padding-top: 8px;
+			padding-left: 8px;
+		}
+		.IUserL_bottom>ul>li{
+			height: 32px;
+			line-height: 32px;
+		}
+		.IUserL_bottom>ul>li i{
+			padding: 0 8px;
+			/*font-weight: bold;*/
+			font-style: normal;
+		}
+		.IUserL_bottom>ul>li a{
+			color: #333;
+		}
+
+		.IUserR ul>li:first-child{
+			margin-top: 0;
+		}
+		.IUserR ul>li{
+			margin-top: 1px;
+			height: 61px;
+			line-height: 61px;
+			text-align: center;
+			background: rgba(255,255,255,0.8);
+		}
+		.IUserR ul>li img{
+			padding: 0 10px 0 0;
+		}
+		.IUserR ul>li a{
+			font-size: 17px;
+			color: #333;
+		}
+
+
+		.IUserNo{
+			width: 1260px;
+			margin: 0 auto;
+		}
+		.IUserNo>li{
+			    display: inline-block;
+			margin-left: 10px;
+			width: 230px;
+			height: 110px;
+			line-height: 110px;
+			text-align: center;
+			background: rgba(255,255,255,0.8);
+		}
+		.IUserNo>li:first-child{
+			margin-left: 0;
+		}
+		.IUserNo>li img{
+			/*padding: 0 8px;*/
+              vertical-align: initial!important;
+		}
+		.IUserNo>li i{
+			float: left;
+			display: block;
+			margin: 20px 0 0 10px;
+			width: 66px;
+			height: 66px;
+			/*background: url("IUserO.png") no-repeat 0 0;*/
+			transition: 0.3s;
+		}
+/*	/*	/*
+		.IUserNo .IUserNo_L0 i{
+		    background:url(../img/icon/IUser0.png) no-repeat;
+		    background-size:cover;
+		 }
+		.IUserNo .IUserNo_L1 i{
+			background:url(../img/icon/IUser1.png) no-repeat;
+			background-size:cover;
+		}
+		.IUserNo .IUserNo_L2 i{
+			background:url(../img/icon/IUser2.png) no-repeat ;
+			background-size:cover;
+		}
+		.IUserNo .IUserNo_L3 i{
+			background:url(../img/icon/IUser3.png) no-repeat;
+		    background-size:cover;
+		}
+		.IUserNo .IUserNo_L4 i{
+			background:url(../img/icon/IUser4.png) no-repeat;
+		    background-size:cover;
+		}
+
+
+
+		.IUserNo .IUserNo_L0:hover i{
+			background:url(../img/icon/IUser0_hover.png)) no-repeat;
+			background-size:cover;
+		}
+		.IUserNo .IUserNo_L1:hover i{
+			background:url(../img/icon/IUser1_hover.png) no-repeat;
+			background-size:cover;
+		}
+		.IUserNo .IUserNo_L2:hover i{
+			background:url(../img/icon/IUser2_hover.png) no-repeat;
+			background-size:cover;
+	    }
+		.IUserNo .IUserNo_L3:hover i{
+			background:url(../img/icon/IUser3_hover.png) no-repeat;
+			background-size:cover;
+		}
+		.IUserNo .IUserNo_L4:hover i{
+			background:url(../img/icon/IUser4_hover.png) no-repeat;
+			background-size:cover;
+		}*/
+		
+		.IUserNo>li span{
+			float: left;
+			padding-left: 8px;
+			font-size: 20px;
+			color: #333;
+		}
+		.IUserNo>li:hover{
+			background: rgba(215,4,22,0.8);
+			transition: all 0.2s ease-out 0s;
+		}
+		.IUserNo>li:hover span{
+			color: #fff;
+			transition: all 0.2s ease-out 0s;
+		}
+
+
+/* ---------20190603七个统一响应式--------- */
+@media screen and (max-width: 1440px) { 
+	.IUserNo{width: 1100px;}
+	.IUserNo>li{margin-left: 3px;width: 154px;}
+	.IUserNo>li i{margin: 20px 0 0 5px;}
+	.IUserNo>li span{padding-left: 3px;}
+}
+/* ---------20190603七个统一响应式--------- */
+
+/*=====Tim12O72O18======*/
+/*=====Tim02272O19======*/

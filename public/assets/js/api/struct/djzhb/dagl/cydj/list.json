@@ -1,0 +1,14 @@
+{
+  "menu": {
+    "menu": "档案管理",
+    "menu2": "查阅登记"
+  },
+  "schema": {
+    "id": 1,
+    "username": "申请人",
+    "name": "档案名称",
+    "type": "档案类别",
+    "chatime": "查阅日期",
+    "shentime": "申请日期"
+  }
+}

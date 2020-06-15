@@ -1,0 +1,36 @@
+{
+  "isAlert": false,
+  "status": 200,
+  "resultData": {
+    "total": 2,
+    "totalPage": 10,
+    "hint": "",
+    "limit": 1,
+    "page": 1,
+    "status": 200,
+    "data": [
+      {
+        "id": "0",
+        "car_id": "1",
+        "card_no": "533321331",
+        "username": "李力",
+        "pre_li": "11456",
+        "curr_li": "11567",
+        "fee": "500",
+        "dtime": "2019年7月5日",
+        "desc": ""
+      },
+      {
+        "id": "1",
+        "car_id": "2",
+        "card_no": "656546543",
+        "username": "郝伟伟",
+        "pre_li": "11456",
+        "curr_li": "11567",
+        "fee": "500",
+        "dtime": "2019年7月5日",
+        "desc": ""
+      }
+    ]
+  }
+}

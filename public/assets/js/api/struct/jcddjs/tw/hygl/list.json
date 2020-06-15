@@ -1,0 +1,16 @@
+{
+  "menu": {
+    "menu": "团委",
+    "menu2": "会议管理"
+  },
+  "clospan": [
+  ],
+  "schema": {
+    "id": 1,
+    "zhuusername": "主会人",
+    "huitime": "会议时间",
+    "name": "会议名称",
+    "dtime": "记录日期",
+    "files": "附件"
+  }
+}

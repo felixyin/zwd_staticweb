@@ -1,0 +1,32 @@
+{
+  "isAlert": false,
+  "status": 200,
+  "resultData": {
+    "total": 2,
+    "totalPage": 10,
+    "hint": "",
+    "limit": 1,
+    "page": 1,
+    "status": 200,
+    "data": [
+      {
+        "id": "0",
+        "zhuusername": "吴用",
+        "huitime": "2018年5月3日",
+        "name": "办公管理制度",
+        "type": "办公",
+        "dtime": "2018年6日",
+        "files": ""
+      },
+      {
+        "id": "1",
+        "zhuusername": "吴用",
+        "huitime": "2018年5月3日",
+        "name": "营销管理制度",
+        "type": "办公",
+        "dtime": "2018年6日",
+        "files": ""
+      }
+    ]
+  }
+}
