@@ -5,7 +5,7 @@
 ## 目录介绍
 
 仔细读完下面目录：
-
+```
 .
 ├── README.md
 ├── app.js
@@ -118,7 +118,7 @@
 │   ├── list.js # r 读取列表
 │   └── remove.js # d 删除
 └── util.js
-
+```
 
 ## package.json配置项说明
 
